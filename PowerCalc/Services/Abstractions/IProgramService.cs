@@ -4,7 +4,9 @@ namespace PowerCalc.Services.Abstractions
 {
     public interface IProgramService
     {
-        WorkoutDay GetWorkout(int week, int day);
-        CalculatedWorkout GetCalculatedWorkout(int week, int day, string lifterName);
+        List<TrainingProgram> GetAllPrograms();
+        TrainingProgram? GetProgram(string name);
+        WorkoutDay? GetWorkout(string programName, int week, int day);
+        CalculatedWorkout CalculatedWorkout(string programName, int week, int day, Lifter lifter);
     }
 }

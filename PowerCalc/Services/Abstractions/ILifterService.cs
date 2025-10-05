@@ -6,6 +6,8 @@ namespace PowerCalc.Services.Abstractions
     {
         List<Lifter> GetAllLifters();
         Lifter? GetLifter(string name);
-        void UpdateLifter(Lifter lifter);
+        void AddLifter(Lifter lifter);
+        void UpdateLifter(string name, Lifter lifter);
+        void DeleteLifter(string name);
     }
 }

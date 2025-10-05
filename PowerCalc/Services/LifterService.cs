@@ -6,29 +6,21 @@ namespace PowerCalc.Services
 {
     public class LifterService : ILifterService
     {
-        private readonly IConfiguration _configuration;
         private readonly string _configPath;
-        private List<Lifter> _lifters;
         private readonly object _lock = new();
 
         public LifterService(IConfiguration configuration, IWebHostEnvironment env)
         {
-            _configuration = configuration;
-            _configPath = Path.Combine(env.ContentRootPath, "appsettings.json");
-            LoadLifters();
-        }
-
-        private void LoadLifters()
-        {
-            var liftersConfig = _configuration.GetSection("Lifters").Get<LiftersConfiguration>();
-            _lifters = liftersConfig?.Lifters ?? new List<Lifter>();
+            var relativePath = configuration["ConfigurationPaths:Lifters"] ?? "Configuration/lifters.json";
+            _configPath = Path.Combine(env.ContentRootPath, relativePath);
         }
 
         public List<Lifter> GetAllLifters()
         {
             lock (_lock)
             {
-                return new List<Lifter>(_lifters);
+                var data = LoadConfig();
+                return data.Lifters;
             }
         }
 
@@ -36,50 +28,89 @@ namespace PowerCalc.Services
         {
             lock (_lock)
             {
-                return _lifters.FirstOrDefault(l => l.Name.Equals(name, StringComparison.OrdinalIgnoreCase));
+                var lifters = GetAllLifters();
+                return lifters.FirstOrDefault(l => l.Name.Equals(name, StringComparison.OrdinalIgnoreCase));
             }
         }
 
-        public void UpdateLifter(Lifter lifter)
+        public void AddLifter(Lifter lifter)
         {
             lock (_lock)
             {
-                var existing = _lifters.FirstOrDefault(l => l.Name.Equals(lifter.Name, StringComparison.OrdinalIgnoreCase));
+                var data = LoadConfig();
                 
-                if (existing != null)
+                if (data.Lifters.Any(l => l.Name.Equals(lifter.Name, StringComparison.OrdinalIgnoreCase))) 
                 {
-                    existing.OneRepMaxes = lifter.OneRepMaxes;
-                }
-                else
-                {
-                    _lifters.Add(lifter);
+                    throw new InvalidOperationException($"Lifter '{lifter.Name}' already exists");
                 }
 
-                SaveLifters();
+                data.Lifters.Add(lifter);
+                SaveConfig(data);
             }
         }
 
-        private void SaveLifters()
+        public void UpdateLifter(string name, Lifter lifter)
         {
-            try
+            lock (_lock)
             {
-                var json = File.ReadAllText(_configPath);
-                using var jsonDoc = JsonDocument.Parse(json);
-                var root = JsonSerializer.Deserialize<Dictionary<string, JsonElement>>(json);
-
-                if (root != null)
+                var data = LoadConfig();
+                var existing = data.Lifters.FirstOrDefault(l => l.Name.Equals(name, StringComparison.OrdinalIgnoreCase));
+                
+                if (existing == null)
                 {
-                    var liftersData = new { Lifters = _lifters };
-                    root["Lifters"] = JsonSerializer.SerializeToElement(liftersData);
-
-                    var options = new JsonSerializerOptions { WriteIndented = true };
-                    File.WriteAllText(_configPath, JsonSerializer.Serialize(root, options));
+                    throw new KeyNotFoundException($"Lifter '{name}' not found");
                 }
+
+                existing.Name = lifter.Name;
+                existing.OneRepMaxes = lifter.OneRepMaxes;
+                SaveConfig(data);
             }
-            catch (Exception ex)
-            {               
-                Console.WriteLine($"Error saving lifters: {ex.Message}");
+        }
+
+        public void DeleteLifter(string name)
+        {
+            lock (_lock)
+            {
+                var data = LoadConfig();
+                var lifter = data.Lifters.FirstOrDefault(l => l.Name.Equals(name, StringComparison.OrdinalIgnoreCase));
+
+                if (lifter == null)
+                {
+                    throw new KeyNotFoundException($"Lifter '{name}' not found");
+                }
+
+                data.Lifters.Remove(lifter);
+                SaveConfig(data);
             }
+        }
+
+        private LifterConfig LoadConfig()
+        {
+            if (!File.Exists(_configPath))
+            {
+                return new LifterConfig();
+            }
+
+            var json = File.ReadAllText(_configPath);
+            return JsonSerializer.Deserialize<LifterConfig>(json, new JsonSerializerOptions
+            {
+                PropertyNameCaseInsensitive = true,
+            }) ?? new LifterConfig();
+        }
+
+        private void SaveConfig(LifterConfig config)
+        {
+            var json = JsonSerializer.Serialize(config, new JsonSerializerOptions
+            {
+                WriteIndented = true
+            });
+
+            File.WriteAllText(_configPath, json);
+        }
+
+        private class LifterConfig
+        {
+            public List<Lifter> Lifters { get; set; } = new();
         }
     }
 }

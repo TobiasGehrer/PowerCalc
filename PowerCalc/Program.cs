@@ -8,30 +8,28 @@ namespace PowerCalc
         private static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
-
-            // Add services to the container.
+            
             builder.Services.AddControllers();
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
-            // Register services with DI
+            // Register services
             builder.Services.AddSingleton<ILifterService, LifterService>();
             builder.Services.AddSingleton<IProgramService, ProgramService>();
+            builder.Services.AddSingleton<IStateService, StateService>();
 
             // Add CORS for development
             builder.Services.AddCors(options =>
             {
-                options.AddPolicy("AllowAll", builder =>
-                {
-                    builder.AllowAnyOrigin()
-                           .AllowAnyMethod()
-                           .AllowAnyHeader();
-                });
+                options.AddPolicy("AllowAll", 
+                    policy => policy
+                    .AllowAnyOrigin()
+                    .AllowAnyMethod()
+                    .AllowAnyHeader());
             });
 
             var app = builder.Build();
-
-            // Configure the HTTP request pipeline
+            
             if (app.Environment.IsDevelopment())
             {
                 app.UseSwagger();
@@ -40,11 +38,11 @@ namespace PowerCalc
 
             app.UseHttpsRedirection();
             app.UseCors("AllowAll");
+            app.UseDefaultFiles();
             app.UseStaticFiles();
             app.UseRouting();
             app.UseAuthorization();
-            app.MapControllers();
-            app.MapFallbackToFile("index.html");
+            app.MapControllers();            
 
             app.Run();
         }

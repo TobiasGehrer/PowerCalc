@@ -5,37 +5,46 @@ using PowerCalc.Services.Abstractions;
 namespace PowerCalc.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("api/workouts")]
     public class WorkoutController : ControllerBase
     {
         private readonly IProgramService _programService;
+        private readonly ILifterService _lifterService;
 
-        public WorkoutController(IProgramService programService)
+        public WorkoutController(IProgramService programService, ILifterService lifterService)
         {
             _programService = programService;
+            _lifterService = lifterService;
         }
 
-        [HttpGet("{week}/{day}")]
-        public ActionResult<WorkoutDay> GetWorkout(int week, int day)
+        [HttpPost("session")]
+        public ActionResult<WorkoutSession> CreateSession([FromBody] SessionRequest request)
         {
             try
             {
-                var workout = _programService.GetWorkout(week, day);
-                return Ok(workout);
-            }
-            catch (KeyNotFoundException ex)
-            {
-                return NotFound(ex.Message);
-            }
-        }
+                var session = new WorkoutSession
+                {
+                    Week = request.Week,
+                    Day = request.Day,
+                    ProgramName = request.ProgramName,
+                    PresentLifters = request.LifterNames,
+                    Workouts = new List<CalculatedWorkout>()
+                };
 
-        [HttpGet("{week}/{day}/lifter/{lifterName}")]
-        public ActionResult<CalculatedWorkout> GetCalculatedWorkout(int week, int day, string lifterName)
-        {
-            try
-            {
-                var workout = _programService.GetCalculatedWorkout(week, day, lifterName);
-                return Ok(workout);
+                foreach (var lifterName in request.LifterNames)
+                {
+                    var lifter = _lifterService.GetLifter(lifterName);
+
+                    if (lifter == null)
+                    {
+                        return NotFound($"Lifter '{lifterName}' not found.");
+                    }
+
+                    var workout = _programService.CalculatedWorkout(request.ProgramName, request.Week, request.Day, lifter);
+                    session.Workouts.Add(workout);
+                }
+
+                return Ok(session);
             }
             catch (KeyNotFoundException ex)
             {

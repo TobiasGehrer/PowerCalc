@@ -5,7 +5,7 @@ using PowerCalc.Services.Abstractions;
 namespace PowerCalc.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("api/lifters")]
     public class LifterController : ControllerBase
     {
         private readonly ILifterService _lifterService;
@@ -34,12 +34,46 @@ namespace PowerCalc.Controllers
             return Ok(lifter);
         }
 
+        [HttpPost]
+        public ActionResult<Lifter> Create([FromBody] Lifter lifter)
+        {
+            try
+            {
+                _lifterService.AddLifter(lifter);
+                return CreatedAtAction(nameof(Get), new { name = lifter.Name }, lifter);
+            }
+            catch (InvalidOperationException ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
         [HttpPut("name")]
         public ActionResult Update(string name, [FromBody] Lifter lifter)
         {
-            lifter.Name = name;
-            _lifterService.UpdateLifter(lifter);
-            return NoContent();
+            try
+            {
+                _lifterService.UpdateLifter(name, lifter);
+                return NoContent();
+            }
+            catch (KeyNotFoundException ex)
+            {
+                return NotFound(ex.Message);
+            }
+        }
+
+        [HttpDelete("{name}")]
+        public ActionResult Delete(string name)
+        {
+            try
+            {
+                _lifterService.DeleteLifter(name);
+                return NoContent();
+            }
+            catch (KeyNotFoundException ex)
+            {
+                return NotFound(ex.Message);
+            }
         }
     }
 }

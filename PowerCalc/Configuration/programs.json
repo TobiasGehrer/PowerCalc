@@ -1,0 +1,1594 @@
+{
+  "Programs": [
+    {
+      "name": "Calgary 12-Week",
+      "weeks": 12,
+      "days": 3,
+      "workouts": [
+        {
+          "week": 1,
+          "day": 1,
+          "exercises": [
+            {
+              "name": "Squat",
+              "sets": "3",
+              "reps": "4",
+              "intensity": "78",
+              "restSeconds": 180,
+              "liftType": "squat"
+            },
+            {
+              "name": "Squat (Volume)",
+              "sets": "3",
+              "reps": "6",
+              "intensity": "65",
+              "restSeconds": 180,
+              "liftType": "squat"
+            },
+            {
+              "name": "Bench Press",
+              "sets": "4",
+              "reps": "4",
+              "intensity": "78",
+              "restSeconds": 180,
+              "liftType": "bench"
+            },
+            {
+              "name": "Bench Press (Volume)",
+              "sets": "3",
+              "reps": "6",
+              "intensity": "65",
+              "restSeconds": 180,
+              "liftType": "bench"
+            },
+            {
+              "name": "Biceps Curls",
+              "sets": "2",
+              "reps": "8-12",
+              "intensity": "70",
+              "restSeconds": 90,
+              "liftType": "curl"
+            }
+          ]
+        },
+        {
+          "week": 1,
+          "day": 2,
+          "exercises": [
+            {
+              "name": "Deadlift",
+              "sets": "3",
+              "reps": "4",
+              "intensity": "78",
+              "restSeconds": 180,
+              "liftType": "deadlift"
+            },
+            {
+              "name": "Deadlift (Volume)",
+              "sets": "3",
+              "reps": "6",
+              "intensity": "65",
+              "restSeconds": 180,
+              "liftType": "deadlift"
+            },
+            {
+              "name": "Pause Bench Press",
+              "sets": "3",
+              "reps": "5",
+              "intensity": "76",
+              "restSeconds": 180,
+              "liftType": "pauseBench"
+            },
+            {
+              "name": "Crunches",
+              "sets": "2",
+              "reps": "8-12",
+              "intensity": "70",
+              "restSeconds": 90,
+              "liftType": "crunch"
+            },
+            {
+              "name": "Triceps Pushdown",
+              "sets": "2",
+              "reps": "8-12",
+              "intensity": "70",
+              "restSeconds": 90,
+              "liftType": "triceps"
+            }
+          ]
+        },
+        {
+          "week": 1,
+          "day": 3,
+          "exercises": [
+            {
+              "name": "Squat",
+              "sets": "3",
+              "reps": "6",
+              "intensity": "65",
+              "restSeconds": 180,
+              "liftType": "squat"
+            },
+            {
+              "name": "Romanian Deadlift",
+              "sets": "4",
+              "reps": "9",
+              "intensity": "71",
+              "restSeconds": 90,
+              "liftType": "rdl"
+            },
+            {
+              "name": "Row",
+              "sets": "4",
+              "reps": "10",
+              "intensity": "70",
+              "restSeconds": 90,
+              "liftType": "row"
+            },
+            {
+              "name": "Overhead Press",
+              "sets": "3",
+              "reps": "8-12",
+              "intensity": "70",
+              "restSeconds": 90,
+              "liftType": "ohp"
+            },
+            {
+              "name": "Calf Raises",
+              "sets": "2",
+              "reps": "8-12",
+              "intensity": "70",
+              "restSeconds": 90,
+              "liftType": "calf"
+            }
+          ]
+        },
+        {
+          "week": 2,
+          "day": 1,
+          "exercises": [
+            {
+              "name": "Pause Squat",
+              "sets": "4",
+              "reps": "5",
+              "intensity": "76",
+              "restSeconds": 180,
+              "liftType": "pauseSquat"
+            },
+            {
+              "name": "Bench Press",
+              "sets": "6",
+              "reps": "6",
+              "intensity": "68",
+              "restSeconds": 180,
+              "liftType": "bench"
+            },
+            {
+              "name": "Row",
+              "sets": "4",
+              "reps": "10",
+              "intensity": "70",
+              "restSeconds": 90,
+              "liftType": "row"
+            },
+            {
+              "name": "Biceps Curls",
+              "sets": "2",
+              "reps": "8-12",
+              "intensity": "70",
+              "restSeconds": 90,
+              "liftType": "curl"
+            }
+          ]
+        },
+        {
+          "week": 2,
+          "day": 2,
+          "exercises": [
+            {
+              "name": "Pause Deadlift",
+              "sets": "4",
+              "reps": "5",
+              "intensity": "76",
+              "restSeconds": 180,
+              "liftType": "pauseDeadlift"
+            },
+            {
+              "name": "Bench Press",
+              "sets": "4",
+              "reps": "8",
+              "intensity": "68",
+              "restSeconds": 180,
+              "liftType": "bench"
+            },
+            {
+              "name": "Row",
+              "sets": "4",
+              "reps": "10",
+              "intensity": "70",
+              "restSeconds": 90,
+              "liftType": "row"
+            },
+            {
+              "name": "Triceps Pushdown",
+              "sets": "2",
+              "reps": "8-12",
+              "intensity": "70",
+              "restSeconds": 90,
+              "liftType": "triceps"
+            }
+          ]
+        },
+        {
+          "week": 2,
+          "day": 3,
+          "exercises": [
+            {
+              "name": "Deadlift",
+              "sets": "3",
+              "reps": "6",
+              "intensity": "65",
+              "restSeconds": 180,
+              "liftType": "deadlift"
+            },
+            {
+              "name": "Overhead Press",
+              "sets": "4",
+              "reps": "8",
+              "intensity": "68",
+              "restSeconds": 90,
+              "liftType": "ohp"
+            },
+            {
+              "name": "Row",
+              "sets": "6",
+              "reps": "10",
+              "intensity": "70",
+              "restSeconds": 90,
+              "liftType": "row"
+            },
+            {
+              "name": "Overhead Press",
+              "sets": "2",
+              "reps": "8-12",
+              "intensity": "70",
+              "restSeconds": 90,
+              "liftType": "ohp"
+            },
+            {
+              "name": "Calf Raises",
+              "sets": "2",
+              "reps": "8-12",
+              "intensity": "70",
+              "restSeconds": 90,
+              "liftType": "calf"
+            }
+          ]
+        },
+        {
+          "week": 3,
+          "day": 1,
+          "exercises": [
+            {
+              "name": "Squat",
+              "sets": "4",
+              "reps": "3",
+              "intensity": "82",
+              "restSeconds": 180,
+              "liftType": "squat"
+            },
+            {
+              "name": "Squat (Volume)",
+              "sets": "2",
+              "reps": "5",
+              "intensity": "70",
+              "restSeconds": 180,
+              "liftType": "squat"
+            },
+            {
+              "name": "Bench Press",
+              "sets": "5",
+              "reps": "3",
+              "intensity": "82",
+              "restSeconds": 180,
+              "liftType": "bench"
+            },
+            {
+              "name": "Bench Press (Volume)",
+              "sets": "2",
+              "reps": "5",
+              "intensity": "70",
+              "restSeconds": 180,
+              "liftType": "bench"
+            },
+            {
+              "name": "Biceps Curls",
+              "sets": "2",
+              "reps": "8-12",
+              "intensity": "70",
+              "restSeconds": 90,
+              "liftType": "curl"
+            }
+          ]
+        },
+        {
+          "week": 3,
+          "day": 2,
+          "exercises": [
+            {
+              "name": "Deadlift",
+              "sets": "4",
+              "reps": "3",
+              "intensity": "82",
+              "restSeconds": 180,
+              "liftType": "deadlift"
+            },
+            {
+              "name": "Deadlift (Volume)",
+              "sets": "2",
+              "reps": "5",
+              "intensity": "70",
+              "restSeconds": 180,
+              "liftType": "deadlift"
+            },
+            {
+              "name": "Pause Bench Press",
+              "sets": "4",
+              "reps": "4",
+              "intensity": "79",
+              "restSeconds": 180,
+              "liftType": "pauseBench"
+            },
+            {
+              "name": "Crunches",
+              "sets": "2",
+              "reps": "8-12",
+              "intensity": "70",
+              "restSeconds": 90,
+              "liftType": "crunch"
+            },
+            {
+              "name": "Triceps Pushdown",
+              "sets": "2",
+              "reps": "8-12",
+              "intensity": "70",
+              "restSeconds": 90,
+              "liftType": "triceps"
+            }
+          ]
+        },
+        {
+          "week": 3,
+          "day": 3,
+          "exercises": [
+            {
+              "name": "Squat",
+              "sets": "2",
+              "reps": "5",
+              "intensity": "68",
+              "restSeconds": 180,
+              "liftType": "squat"
+            },
+            {
+              "name": "Romanian Deadlift",
+              "sets": "4",
+              "reps": "8",
+              "intensity": "74",
+              "restSeconds": 90,
+              "liftType": "rdl"
+            },
+            {
+              "name": "Row",
+              "sets": "4",
+              "reps": "10",
+              "intensity": "70",
+              "restSeconds": 90,
+              "liftType": "row"
+            },
+            {
+              "name": "Overhead Press",
+              "sets": "2",
+              "reps": "8-12",
+              "intensity": "70",
+              "restSeconds": 90,
+              "liftType": "ohp"
+            },
+            {
+              "name": "Calf Raises",
+              "sets": "2",
+              "reps": "8-12",
+              "intensity": "70",
+              "restSeconds": 90,
+              "liftType": "calf"
+            }
+          ]
+        },
+        {
+          "week": 4,
+          "day": 1,
+          "exercises": [
+            {
+              "name": "Pause Squat",
+              "sets": "5",
+              "reps": "3",
+              "intensity": "81",
+              "restSeconds": 180,
+              "liftType": "pauseSquat"
+            },
+            {
+              "name": "Bench Press",
+              "sets": "6",
+              "reps": "5",
+              "intensity": "70",
+              "restSeconds": 180,
+              "liftType": "bench"
+            },
+            {
+              "name": "Row",
+              "sets": "4",
+              "reps": "10",
+              "intensity": "70",
+              "restSeconds": 90,
+              "liftType": "row"
+            },
+            {
+              "name": "Biceps Curls",
+              "sets": "2",
+              "reps": "8-12",
+              "intensity": "70",
+              "restSeconds": 90,
+              "liftType": "curl"
+            }
+          ]
+        },
+        {
+          "week": 4,
+          "day": 2,
+          "exercises": [
+            {
+              "name": "Pause Deadlift",
+              "sets": "5",
+              "reps": "3",
+              "intensity": "81",
+              "restSeconds": 180,
+              "liftType": "pauseDeadlift"
+            },
+            {
+              "name": "Bench Press",
+              "sets": "3",
+              "reps": "12",
+              "intensity": "63",
+              "restSeconds": 180,
+              "liftType": "bench"
+            },
+            {
+              "name": "Row",
+              "sets": "4",
+              "reps": "10",
+              "intensity": "70",
+              "restSeconds": 90,
+              "liftType": "row"
+            },
+            {
+              "name": "Triceps Pushdown",
+              "sets": "2",
+              "reps": "8-12",
+              "intensity": "70",
+              "restSeconds": 90,
+              "liftType": "triceps"
+            }
+          ]
+        },
+        {
+          "week": 4,
+          "day": 3,
+          "exercises": [
+            {
+              "name": "Deadlift",
+              "sets": "2",
+              "reps": "5",
+              "intensity": "68",
+              "restSeconds": 180,
+              "liftType": "deadlift"
+            },
+            {
+              "name": "Overhead Press",
+              "sets": "4",
+              "reps": "8",
+              "intensity": "71",
+              "restSeconds": 90,
+              "liftType": "ohp"
+            },
+            {
+              "name": "Row",
+              "sets": "6",
+              "reps": "10",
+              "intensity": "70",
+              "restSeconds": 90,
+              "liftType": "row"
+            },
+            {
+              "name": "Overhead Press",
+              "sets": "2",
+              "reps": "8-12",
+              "intensity": "70",
+              "restSeconds": 90,
+              "liftType": "ohp"
+            },
+            {
+              "name": "Calf Raises",
+              "sets": "2",
+              "reps": "8-12",
+              "intensity": "70",
+              "restSeconds": 90,
+              "liftType": "calf"
+            }
+          ]
+        },
+        {
+          "week": 5,
+          "day": 1,
+          "exercises": [
+            {
+              "name": "Squat",
+              "sets": "5",
+              "reps": "3",
+              "intensity": "85",
+              "restSeconds": 180,
+              "liftType": "squat"
+            },
+            {
+              "name": "Squat (Volume)",
+              "sets": "3",
+              "reps": "4",
+              "intensity": "75",
+              "restSeconds": 180,
+              "liftType": "squat"
+            },
+            {
+              "name": "Bench Press",
+              "sets": "5",
+              "reps": "3",
+              "intensity": "85",
+              "restSeconds": 180,
+              "liftType": "bench"
+            },
+            {
+              "name": "Bench Press (Volume)",
+              "sets": "3",
+              "reps": "4",
+              "intensity": "75",
+              "restSeconds": 180,
+              "liftType": "bench"
+            },
+            {
+              "name": "Biceps Curls",
+              "sets": "2",
+              "reps": "8-12",
+              "intensity": "70",
+              "restSeconds": 90,
+              "liftType": "curl"
+            }
+          ]
+        },
+        {
+          "week": 5,
+          "day": 2,
+          "exercises": [
+            {
+              "name": "Deadlift",
+              "sets": "5",
+              "reps": "3",
+              "intensity": "85",
+              "restSeconds": 180,
+              "liftType": "deadlift"
+            },
+            {
+              "name": "Deadlift (Volume)",
+              "sets": "3",
+              "reps": "4",
+              "intensity": "75",
+              "restSeconds": 180,
+              "liftType": "deadlift"
+            },
+            {
+              "name": "Pause Bench Press",
+              "sets": "4",
+              "reps": "3",
+              "intensity": "81",
+              "restSeconds": 180,
+              "liftType": "pauseBench"
+            },
+            {
+              "name": "Crunches",
+              "sets": "2",
+              "reps": "8-12",
+              "intensity": "70",
+              "restSeconds": 90,
+              "liftType": "crunch"
+            },
+            {
+              "name": "Triceps Pushdown",
+              "sets": "2",
+              "reps": "8-12",
+              "intensity": "70",
+              "restSeconds": 90,
+              "liftType": "triceps"
+            }
+          ]
+        },
+        {
+          "week": 5,
+          "day": 3,
+          "exercises": [
+            {
+              "name": "Squat",
+              "sets": "3",
+              "reps": "5",
+              "intensity": "68",
+              "restSeconds": 180,
+              "liftType": "squat"
+            },
+            {
+              "name": "Romanian Deadlift",
+              "sets": "4",
+              "reps": "8",
+              "intensity": "74",
+              "restSeconds": 90,
+              "liftType": "rdl"
+            },
+            {
+              "name": "Row",
+              "sets": "4",
+              "reps": "10",
+              "intensity": "70",
+              "restSeconds": 90,
+              "liftType": "row"
+            },
+            {
+              "name": "Overhead Press",
+              "sets": "2",
+              "reps": "8-12",
+              "intensity": "70",
+              "restSeconds": 90,
+              "liftType": "ohp"
+            },
+            {
+              "name": "Calf Raises",
+              "sets": "2",
+              "reps": "8-12",
+              "intensity": "70",
+              "restSeconds": 90,
+              "liftType": "calf"
+            }
+          ]
+        },
+        {
+          "week": 6,
+          "day": 1,
+          "exercises": [
+            {
+              "name": "Pause Squat",
+              "sets": "4",
+              "reps": "2",
+              "intensity": "87",
+              "restSeconds": 180,
+              "liftType": "pauseSquat"
+            },
+            {
+              "name": "Bench Press",
+              "sets": "6",
+              "reps": "5",
+              "intensity": "68",
+              "restSeconds": 180,
+              "liftType": "bench"
+            },
+            {
+              "name": "Row",
+              "sets": "4",
+              "reps": "10",
+              "intensity": "70",
+              "restSeconds": 90,
+              "liftType": "row"
+            },
+            {
+              "name": "Biceps Curls",
+              "sets": "2",
+              "reps": "8-12",
+              "intensity": "70",
+              "restSeconds": 90,
+              "liftType": "curl"
+            }
+          ]
+        },
+        {
+          "week": 6,
+          "day": 2,
+          "exercises": [
+            {
+              "name": "Pause Deadlift",
+              "sets": "4",
+              "reps": "2",
+              "intensity": "87",
+              "restSeconds": 180,
+              "liftType": "pauseDeadlift"
+            },
+            {
+              "name": "Bench Press",
+              "sets": "4",
+              "reps": "5",
+              "intensity": "76",
+              "restSeconds": 180,
+              "liftType": "bench"
+            },
+            {
+              "name": "Row",
+              "sets": "4",
+              "reps": "8",
+              "intensity": "75",
+              "restSeconds": 90,
+              "liftType": "row"
+            },
+            {
+              "name": "Triceps Pushdown",
+              "sets": "2",
+              "reps": "8-12",
+              "intensity": "70",
+              "restSeconds": 90,
+              "liftType": "triceps"
+            }
+          ]
+        },
+        {
+          "week": 6,
+          "day": 3,
+          "exercises": [
+            {
+              "name": "Deadlift",
+              "sets": "3",
+              "reps": "5",
+              "intensity": "68",
+              "restSeconds": 180,
+              "liftType": "deadlift"
+            },
+            {
+              "name": "Overhead Press",
+              "sets": "4",
+              "reps": "7",
+              "intensity": "74",
+              "restSeconds": 90,
+              "liftType": "ohp"
+            },
+            {
+              "name": "Row",
+              "sets": "6",
+              "reps": "8",
+              "intensity": "75",
+              "restSeconds": 90,
+              "liftType": "row"
+            },
+            {
+              "name": "Overhead Press",
+              "sets": "2",
+              "reps": "8-12",
+              "intensity": "70",
+              "restSeconds": 90,
+              "liftType": "ohp"
+            },
+            {
+              "name": "Calf Raises",
+              "sets": "2",
+              "reps": "8-12",
+              "intensity": "70",
+              "restSeconds": 90,
+              "liftType": "calf"
+            }
+          ]
+        },
+        {
+          "week": 7,
+          "day": 1,
+          "exercises": [
+            {
+              "name": "Squat",
+              "sets": "1",
+              "reps": "2",
+              "intensity": "86",
+              "restSeconds": 180,
+              "liftType": "squat"
+            },
+            {
+              "name": "Squat (Volume)",
+              "sets": "5",
+              "reps": "4",
+              "intensity": "70",
+              "restSeconds": 180,
+              "liftType": "squat"
+            },
+            {
+              "name": "Bench Press",
+              "sets": "1",
+              "reps": "2",
+              "intensity": "86",
+              "restSeconds": 180,
+              "liftType": "bench"
+            },
+            {
+              "name": "Bench Press (Volume)",
+              "sets": "5",
+              "reps": "4",
+              "intensity": "70",
+              "restSeconds": 180,
+              "liftType": "bench"
+            },
+            {
+              "name": "Biceps Curls",
+              "sets": "2",
+              "reps": "8-12",
+              "intensity": "70",
+              "restSeconds": 90,
+              "liftType": "curl"
+            }
+          ]
+        },
+        {
+          "week": 7,
+          "day": 2,
+          "exercises": [
+            {
+              "name": "Deadlift",
+              "sets": "1",
+              "reps": "2",
+              "intensity": "86",
+              "restSeconds": 180,
+              "liftType": "deadlift"
+            },
+            {
+              "name": "Deadlift (Volume)",
+              "sets": "5",
+              "reps": "4",
+              "intensity": "70",
+              "restSeconds": 180,
+              "liftType": "deadlift"
+            },
+            {
+              "name": "Pause Bench Press",
+              "sets": "3",
+              "reps": "3",
+              "intensity": "81",
+              "restSeconds": 180,
+              "liftType": "pauseBench"
+            },
+            {
+              "name": "Crunches",
+              "sets": "2",
+              "reps": "8-12",
+              "intensity": "70",
+              "restSeconds": 90,
+              "liftType": "crunch"
+            },
+            {
+              "name": "Triceps Pushdown",
+              "sets": "2",
+              "reps": "8-12",
+              "intensity": "70",
+              "restSeconds": 90,
+              "liftType": "triceps"
+            }
+          ]
+        },
+        {
+          "week": 7,
+          "day": 3,
+          "exercises": [
+            {
+              "name": "Squat",
+              "sets": "2",
+              "reps": "5",
+              "intensity": "68",
+              "restSeconds": 180,
+              "liftType": "squat"
+            },
+            {
+              "name": "Romanian Deadlift",
+              "sets": "4",
+              "reps": "8",
+              "intensity": "74",
+              "restSeconds": 90,
+              "liftType": "rdl"
+            },
+            {
+              "name": "Row",
+              "sets": "4",
+              "reps": "10",
+              "intensity": "70",
+              "restSeconds": 90,
+              "liftType": "row"
+            },
+            {
+              "name": "Overhead Press",
+              "sets": "1+2F",
+              "reps": "6",
+              "intensity": "81/76",
+              "restSeconds": 90,
+              "liftType": "ohp",
+              "note": "F = Fail (-5%). Do 1 set at 81%, then 2 more sets. If you fail, use 76% for those sets."
+            },
+            {
+              "name": "Calf Raises",
+              "sets": "2",
+              "reps": "8-12",
+              "intensity": "70",
+              "restSeconds": 90,
+              "liftType": "calf"
+            }
+          ]
+        },
+        {
+          "week": 8,
+          "day": 1,
+          "exercises": [
+            {
+              "name": "Pause Squat",
+              "sets": "4",
+              "reps": "5",
+              "intensity": "79",
+              "restSeconds": 180,
+              "liftType": "pauseSquat"
+            },
+            {
+              "name": "Bench Press",
+              "sets": "6",
+              "reps": "4",
+              "intensity": "73",
+              "restSeconds": 180,
+              "liftType": "bench"
+            },
+            {
+              "name": "Row",
+              "sets": "4",
+              "reps": "10",
+              "intensity": "70",
+              "restSeconds": 90,
+              "liftType": "row"
+            },
+            {
+              "name": "Biceps Curls",
+              "sets": "2",
+              "reps": "8-12",
+              "intensity": "70",
+              "restSeconds": 90,
+              "liftType": "curl"
+            }
+          ]
+        },
+        {
+          "week": 8,
+          "day": 2,
+          "exercises": [
+            {
+              "name": "Pause Deadlift",
+              "sets": "4",
+              "reps": "5",
+              "intensity": "76",
+              "restSeconds": 180,
+              "liftType": "pauseDeadlift"
+            },
+            {
+              "name": "Bench Press",
+              "sets": "4",
+              "reps": "7",
+              "intensity": "71",
+              "restSeconds": 180,
+              "liftType": "bench"
+            },
+            {
+              "name": "Row",
+              "sets": "4",
+              "reps": "10",
+              "intensity": "70",
+              "restSeconds": 90,
+              "liftType": "row"
+            },
+            {
+              "name": "Triceps Pushdown",
+              "sets": "2",
+              "reps": "8-12",
+              "intensity": "70",
+              "restSeconds": 90,
+              "liftType": "triceps"
+            }
+          ]
+        },
+        {
+          "week": 8,
+          "day": 3,
+          "exercises": [
+            {
+              "name": "Deadlift",
+              "sets": "2",
+              "reps": "5",
+              "intensity": "68",
+              "restSeconds": 180,
+              "liftType": "deadlift"
+            },
+            {
+              "name": "Overhead Press",
+              "sets": "5",
+              "reps": "6",
+              "intensity": "75",
+              "restSeconds": 90,
+              "liftType": "ohp"
+            },
+            {
+              "name": "Row",
+              "sets": "6",
+              "reps": "10",
+              "intensity": "70",
+              "restSeconds": 90,
+              "liftType": "row"
+            },
+            {
+              "name": "Overhead Press",
+              "sets": "2",
+              "reps": "8-12",
+              "intensity": "70",
+              "restSeconds": 90,
+              "liftType": "ohp"
+            },
+            {
+              "name": "Calf Raises",
+              "sets": "2",
+              "reps": "8-12",
+              "intensity": "70",
+              "restSeconds": 90,
+              "liftType": "calf"
+            }
+          ]
+        },
+        {
+          "week": 9,
+          "day": 1,
+          "exercises": [
+            {
+              "name": "Squat",
+              "sets": "1",
+              "reps": "2",
+              "intensity": "89",
+              "restSeconds": 180,
+              "liftType": "squat"
+            },
+            {
+              "name": "Squat (Volume)",
+              "sets": "6",
+              "reps": "5",
+              "intensity": "68",
+              "restSeconds": 180,
+              "liftType": "squat"
+            },
+            {
+              "name": "Bench Press",
+              "sets": "1",
+              "reps": "2",
+              "intensity": "89",
+              "restSeconds": 180,
+              "liftType": "bench"
+            },
+            {
+              "name": "Bench Press (Volume)",
+              "sets": "7",
+              "reps": "5",
+              "intensity": "68",
+              "restSeconds": 180,
+              "liftType": "bench"
+            },
+            {
+              "name": "Biceps Curls",
+              "sets": "2",
+              "reps": "8-12",
+              "intensity": "70",
+              "restSeconds": 90,
+              "liftType": "curl"
+            }
+          ]
+        },
+        {
+          "week": 9,
+          "day": 2,
+          "exercises": [
+            {
+              "name": "Deadlift",
+              "sets": "1",
+              "reps": "2",
+              "intensity": "89",
+              "restSeconds": 180,
+              "liftType": "deadlift"
+            },
+            {
+              "name": "Deadlift (Volume)",
+              "sets": "6",
+              "reps": "5",
+              "intensity": "68",
+              "restSeconds": 180,
+              "liftType": "deadlift"
+            },
+            {
+              "name": "Pause Bench Press",
+              "sets": "1+2F",
+              "reps": "4",
+              "intensity": "81/76",
+              "restSeconds": 180,
+              "liftType": "pauseBench",
+              "note": "F = Fail (-5%). Do 1 set at 81%, then 2 more sets. If you fail, use 76% for those sets."
+            },
+            {
+              "name": "Crunches",
+              "sets": "2",
+              "reps": "8-12",
+              "intensity": "70",
+              "restSeconds": 90,
+              "liftType": "crunch"
+            },
+            {
+              "name": "Triceps Pushdown",
+              "sets": "2",
+              "reps": "8-12",
+              "intensity": "70",
+              "restSeconds": 90,
+              "liftType": "triceps"
+            }
+          ]
+        },
+        {
+          "week": 9,
+          "day": 3,
+          "exercises": [
+            {
+              "name": "Squat",
+              "sets": "2",
+              "reps": "5",
+              "intensity": "68",
+              "restSeconds": 180,
+              "liftType": "squat"
+            },
+            {
+              "name": "Romanian Deadlift",
+              "sets": "4",
+              "reps": "8",
+              "intensity": "74",
+              "restSeconds": 90,
+              "liftType": "rdl"
+            },
+            {
+              "name": "Row",
+              "sets": "4",
+              "reps": "10",
+              "intensity": "70",
+              "restSeconds": 90,
+              "liftType": "row"
+            },
+            {
+              "name": "Overhead Press",
+              "sets": "1+1F",
+              "reps": "7",
+              "intensity": "79/74",
+              "restSeconds": 90,
+              "liftType": "ohp",
+              "note": "F = Fail (-5%). Do 1 set at 79%, then 1 more set. If you fail, use 74% for that set."
+            },
+            {
+              "name": "Calf Raises",
+              "sets": "2",
+              "reps": "8-12",
+              "intensity": "70",
+              "restSeconds": 90,
+              "liftType": "calf"
+            }
+          ]
+        },
+        {
+          "week": 10,
+          "day": 1,
+          "exercises": [
+            {
+              "name": "Pause Squat",
+              "sets": "4",
+              "reps": "5",
+              "intensity": "79",
+              "restSeconds": 180,
+              "liftType": "pauseSquat"
+            },
+            {
+              "name": "Bench Press",
+              "sets": "6",
+              "reps": "3",
+              "intensity": "75",
+              "restSeconds": 180,
+              "liftType": "bench"
+            },
+            {
+              "name": "Row",
+              "sets": "4",
+              "reps": "10",
+              "intensity": "70",
+              "restSeconds": 90,
+              "liftType": "row"
+            },
+            {
+              "name": "Biceps Curls",
+              "sets": "2",
+              "reps": "8-12",
+              "intensity": "70",
+              "restSeconds": 90,
+              "liftType": "curl"
+            }
+          ]
+        },
+        {
+          "week": 10,
+          "day": 2,
+          "exercises": [
+            {
+              "name": "Pause Deadlift",
+              "sets": "1",
+              "reps": "3",
+              "intensity": "81",
+              "restSeconds": 180,
+              "liftType": "pauseDeadlift"
+            },
+            {
+              "name": "Pause Deadlift (Volume)",
+              "sets": "1+2F",
+              "reps": "5",
+              "intensity": "79/74",
+              "restSeconds": 180,
+              "liftType": "pauseDeadlift",
+              "note": "F = Fail (-5%). Do 1 set at 79%, then 2 more sets. If you fail, use 74% for those sets."
+            },
+            {
+              "name": "Bench Press",
+              "sets": "4",
+              "reps": "6",
+              "intensity": "71",
+              "restSeconds": 180,
+              "liftType": "bench"
+            },
+            {
+              "name": "Row",
+              "sets": "4",
+              "reps": "10",
+              "intensity": "70",
+              "restSeconds": 90,
+              "liftType": "row"
+            },
+            {
+              "name": "Triceps Pushdown",
+              "sets": "2",
+              "reps": "8-12",
+              "intensity": "70",
+              "restSeconds": 90,
+              "liftType": "triceps"
+            }
+          ]
+        },
+        {
+          "week": 10,
+          "day": 3,
+          "exercises": [
+            {
+              "name": "Deadlift",
+              "sets": "2",
+              "reps": "5",
+              "intensity": "68",
+              "restSeconds": 180,
+              "liftType": "deadlift"
+            },
+            {
+              "name": "Overhead Press",
+              "sets": "5",
+              "reps": "6",
+              "intensity": "77.5",
+              "restSeconds": 90,
+              "liftType": "ohp"
+            },
+            {
+              "name": "Row",
+              "sets": "6",
+              "reps": "10",
+              "intensity": "70",
+              "restSeconds": 90,
+              "liftType": "row"
+            },
+            {
+              "name": "Overhead Press",
+              "sets": "2",
+              "reps": "8-12",
+              "intensity": "70",
+              "restSeconds": 90,
+              "liftType": "ohp"
+            },
+            {
+              "name": "Calf Raises",
+              "sets": "2",
+              "reps": "8-12",
+              "intensity": "70",
+              "restSeconds": 90,
+              "liftType": "calf"
+            }
+          ]
+        },
+        {
+          "week": 11,
+          "day": 1,
+          "exercises": [
+            {
+              "name": "Squat",
+              "sets": "1",
+              "reps": "1",
+              "intensity": "92",
+              "restSeconds": 180,
+              "liftType": "squat"
+            },
+            {
+              "name": "Squat (Volume)",
+              "sets": "4",
+              "reps": "4",
+              "intensity": "72",
+              "restSeconds": 180,
+              "liftType": "squat"
+            },
+            {
+              "name": "Bench Press",
+              "sets": "1",
+              "reps": "1",
+              "intensity": "96",
+              "restSeconds": 180,
+              "liftType": "bench"
+            },
+            {
+              "name": "Bench Press (Volume)",
+              "sets": "5",
+              "reps": "4",
+              "intensity": "72",
+              "restSeconds": 180,
+              "liftType": "bench"
+            },
+            {
+              "name": "Biceps Curls",
+              "sets": "2",
+              "reps": "8-12",
+              "intensity": "70",
+              "restSeconds": 90,
+              "liftType": "curl"
+            }
+          ]
+        },
+        {
+          "week": 11,
+          "day": 2,
+          "exercises": [
+            {
+              "name": "Deadlift",
+              "sets": "1",
+              "reps": "1",
+              "intensity": "92",
+              "restSeconds": 180,
+              "liftType": "deadlift"
+            },
+            {
+              "name": "Deadlift (Volume)",
+              "sets": "4",
+              "reps": "4",
+              "intensity": "72",
+              "restSeconds": 180,
+              "liftType": "deadlift"
+            },
+            {
+              "name": "Pause Bench Press",
+              "sets": "1+2R",
+              "reps": "4",
+              "intensity": "81",
+              "restSeconds": 180,
+              "liftType": "pauseBench",
+              "note": "R = Repeat. Do 1 set at 81%, then repeat the weight for 2 more sets."
+            },
+            {
+              "name": "Crunches",
+              "sets": "2",
+              "reps": "8-12",
+              "intensity": "70",
+              "restSeconds": 90,
+              "liftType": "crunch"
+            },
+            {
+              "name": "Triceps Pushdown",
+              "sets": "2",
+              "reps": "8-12",
+              "intensity": "70",
+              "restSeconds": 90,
+              "liftType": "triceps"
+            }
+          ]
+        },
+        {
+          "week": 11,
+          "day": 3,
+          "exercises": [
+            {
+              "name": "Squat",
+              "sets": "2",
+              "reps": "4",
+              "intensity": "71",
+              "restSeconds": 180,
+              "liftType": "squat"
+            },
+            {
+              "name": "Romanian Deadlift",
+              "sets": "4",
+              "reps": "7",
+              "intensity": "76",
+              "restSeconds": 90,
+              "liftType": "rdl"
+            },
+            {
+              "name": "Row",
+              "sets": "4",
+              "reps": "8",
+              "intensity": "75",
+              "restSeconds": 90,
+              "liftType": "row"
+            },
+            {
+              "name": "Overhead Press",
+              "sets": "1+2R",
+              "reps": "6",
+              "intensity": "79",
+              "restSeconds": 90,
+              "liftType": "ohp",
+              "note": "R = Repeat. Do 1 set at 79%, then repeat the weight for 2 more sets."
+            },
+            {
+              "name": "Calf Raises",
+              "sets": "2",
+              "reps": "8-12",
+              "intensity": "70",
+              "restSeconds": 90,
+              "liftType": "calf"
+            }
+          ]
+        },
+        {
+          "week": 12,
+          "day": 1,
+          "exercises": [
+            {
+              "name": "Pause Squat",
+              "sets": "4",
+              "reps": "2",
+              "intensity": "87",
+              "restSeconds": 180,
+              "liftType": "pauseSquat"
+            },
+            {
+              "name": "Bench Press",
+              "sets": "6",
+              "reps": "5",
+              "intensity": "68",
+              "restSeconds": 180,
+              "liftType": "bench"
+            },
+            {
+              "name": "Row",
+              "sets": "4",
+              "reps": "10",
+              "intensity": "70",
+              "restSeconds": 90,
+              "liftType": "row"
+            },
+            {
+              "name": "Biceps Curls",
+              "sets": "2",
+              "reps": "8-12",
+              "intensity": "70",
+              "restSeconds": 90,
+              "liftType": "curl"
+            }
+          ]
+        },
+        {
+          "week": 12,
+          "day": 2,
+          "exercises": [
+            {
+              "name": "Pause Deadlift",
+              "sets": "1",
+              "reps": "2",
+              "intensity": "84",
+              "restSeconds": 180,
+              "liftType": "pauseDeadlift"
+            },
+            {
+              "name": "Pause Deadlift (Volume)",
+              "sets": "1+2R",
+              "reps": "4",
+              "intensity": "79",
+              "restSeconds": 180,
+              "liftType": "pauseDeadlift",
+              "note": "R = Repeat. Do 1 set at 79%, then repeat the weight for 2 more sets."
+            },
+            {
+              "name": "Bench Press",
+              "sets": "4",
+              "reps": "5",
+              "intensity": "76",
+              "restSeconds": 180,
+              "liftType": "bench"
+            },
+            {
+              "name": "Row",
+              "sets": "4",
+              "reps": "8",
+              "intensity": "75",
+              "restSeconds": 90,
+              "liftType": "row"
+            },
+            {
+              "name": "Triceps Pushdown",
+              "sets": "2",
+              "reps": "8-12",
+              "intensity": "70",
+              "restSeconds": 90,
+              "liftType": "triceps"
+            }
+          ]
+        },
+        {
+          "week": 12,
+          "day": 3,
+          "exercises": [
+            {
+              "name": "Deadlift",
+              "sets": "2",
+              "reps": "4",
+              "intensity": "71",
+              "restSeconds": 180,
+              "liftType": "deadlift"
+            },
+            {
+              "name": "Overhead Press",
+              "sets": "4",
+              "reps": "10",
+              "intensity": "70",
+              "restSeconds": 90,
+              "liftType": "ohp"
+            },
+            {
+              "name": "Row",
+              "sets": "6",
+              "reps": "8",
+              "intensity": "75",
+              "restSeconds": 90,
+              "liftType": "row"
+            },
+            {
+              "name": "Overhead Press",
+              "sets": "2",
+              "reps": "8-12",
+              "intensity": "70",
+              "restSeconds": 90,
+              "liftType": "ohp"
+            },
+            {
+              "name": "Calf Raises",
+              "sets": "2",
+              "reps": "8-12",
+              "intensity": "70",
+              "restSeconds": 90,
+              "liftType": "calf"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
