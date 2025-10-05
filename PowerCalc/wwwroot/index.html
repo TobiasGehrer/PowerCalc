@@ -1,10 +1,325 @@
-﻿<!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PowerCalc</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+            .header h1 {
+                font-size: 2em;
+                margin-bottom: 5px;
+            }
+
+        .controls {
+            background: #f8f9fa;
+            padding: 25px 30px;
+            border-bottom: 2px solid #e9ecef;
+        }
+
+        .input-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+
+        select, button {
+            padding: 12px;
+            border: 2px solid #dee2e6;
+            border-radius: 8px;
+            font-size: 1em;
+            transition: all 0.3s;
+        }
+
+            select:focus {
+                outline: none;
+                border-color: #667eea;
+            }
+
+        button {
+            background: #667eea;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-weight: 600;
+        }
+
+            button:hover {
+                background: #5568d3;
+                transform: translateY(-1px);
+            }
+
+            button:active {
+                transform: translateY(0);
+            }
+
+        .content {
+            padding: 30px;
+        }
+
+        .workout-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+            .workout-header h2 {
+                font-size: 1.8em;
+                margin-bottom: 5px;
+            }
+
+            .workout-header h3 {
+                font-size: 1.3em;
+                opacity: 0.9;
+            }
+
+        .exercise {
+            background: #f8f9fa;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+
+        .exercise-name {
+            font-weight: 700;
+            font-size: 1.2em;
+            margin-bottom: 15px;
+            color: #212529;
+        }
+
+        .exercise-details {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            gap: 10px;
+        }
+
+        .detail {
+            background: white;
+            padding: 10px;
+            border-radius: 6px;
+            text-align: center;
+        }
+
+        .detail-label {
+            font-weight: 600;
+            color: #6c757d;
+            font-size: 0.8em;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+
+        .detail-value {
+            color: #212529;
+            font-weight: 700;
+            font-size: 1.1em;
+        }
+
+        .weight-value {
+            color: #667eea;
+            font-size: 1.3em;
+        }
+
+        .exercise-note {
+            margin-top: 12px;
+            padding: 10px;
+            background: #fff3cd;
+            border-left: 3px solid #ffc107;
+            border-radius: 4px;
+            font-size: 0.9em;
+            color: #856404;
+        }
+
+        .error {
+            padding: 20px;
+            color: #721c24;
+            background: #f8d7da;
+            border-radius: 8px;
+            border-left: 4px solid #f5c6cb;
+        }
+
+        @media (max-width: 768px) {
+            .input-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .exercise-details {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
+    <div class="container">
+        <div class="header">
+            <h1>💪 PowerCalc</h1>
+            <p>Powerlifting Program Calculator</p>
+        </div>
+        <div class="controls">
+            <div class="input-grid">
+                <select id="lifterSelect">
+                    <option value="">Select Lifter...</option>
+                </select>
+                <select id="weekSelect">
+                    <option value="">Select Week...</option>
+                </select>
+                <select id="daySelect">
+                    <option value="">Select Day...</option>
+                </select>
+                <button onclick="loadWorkout()">Load Workout</button>
+            </div>
+        </div>
+        <div class="content" id="workoutContent">
+            <p style="text-align: center; color: #6c757d; padding: 40px;">
+                Select a lifter, week, and day to view the workout
+            </p>
+        </div>
+    </div>
 
+    <script>
+        async function init() {
+            try {
+                const lifters = await fetch('/api/lifters').then(r => r.json());
+                const lifterSelect = document.getElementById('lifterSelect');
+                lifters.forEach(l => {
+                    const opt = document.createElement('option');
+                    opt.value = l.name;
+                    opt.textContent = l.name;
+                    lifterSelect.appendChild(opt);
+                });
+
+                const weekSelect = document.getElementById('weekSelect');
+                for (let i = 1; i <= 12; i++) {
+                    const opt = document.createElement('option');
+                    opt.value = i;
+                    opt.textContent = `Week ${i}`;
+                    weekSelect.appendChild(opt);
+                }
+
+                weekSelect.addEventListener('change', updateDayOptions);
+                updateDayOptions();
+            } catch (e) {
+                document.getElementById('workoutContent').innerHTML =
+                    '<div class="error">Error loading data. Make sure the API is running.</div>';
+            }
+        }
+
+        function updateDayOptions() {
+            const week = parseInt(document.getElementById('weekSelect').value);
+            const daySelect = document.getElementById('daySelect');
+            daySelect.innerHTML = '<option value="">Select Day...</option>';
+
+            if (!week) return;
+
+            const isOdd = week % 2 === 1;
+            const days = isOdd ? [1, 2, 3] : [4, 5, 6];
+
+            days.forEach(d => {
+                const opt = document.createElement('option');
+                opt.value = isOdd ? d : d - 3;
+                opt.textContent = `Day ${d}`;
+                daySelect.appendChild(opt);
+            });
+        }
+
+        async function loadWorkout() {
+            const lifter = document.getElementById('lifterSelect').value;
+            const week = document.getElementById('weekSelect').value;
+            const day = document.getElementById('daySelect').value;
+
+            if (!lifter || !week || !day) {
+                document.getElementById('workoutContent').innerHTML =
+                    '<div class="error">Please select lifter, week, and day</div>';
+                return;
+            }
+
+            try {
+                const workout = await fetch(`/api/workouts/${week}/${day}/lifter/${lifter}`)
+                    .then(r => {
+                        if (!r.ok) throw new Error('Workout not found');
+                        return r.json();
+                    });
+                renderWorkout(workout);
+            } catch (e) {
+                document.getElementById('workoutContent').innerHTML =
+                    `<div class="error">Error: ${e.message}</div>`;
+            }
+        }
+
+        function renderWorkout(workout) {
+            const isOdd = workout.week % 2 === 1;
+            const actualDay = isOdd ? workout.day : workout.day + 3;
+
+            let html = `
+                <div class="workout-header">
+                    <h2>Week ${workout.week} - Day ${actualDay}</h2>
+                    <h3>${workout.lifterName}</h3>
+                </div>
+            `;
+
+            workout.exercises.forEach(ex => {
+                html += `
+                    <div class="exercise">
+                        <div class="exercise-name">${ex.name}</div>
+                        <div class="exercise-details">
+                            <div class="detail">
+                                <div class="detail-label">Sets</div>
+                                <div class="detail-value">${ex.sets}</div>
+                            </div>
+                            <div class="detail">
+                                <div class="detail-label">Reps</div>
+                                <div class="detail-value">${ex.reps}</div>
+                            </div>
+                            <div class="detail">
+                                <div class="detail-label">Weight</div>
+                                <div class="detail-value weight-value">${ex.weight} kg</div>
+                            </div>
+                            <div class="detail">
+                                <div class="detail-label">Rest</div>
+                                <div class="detail-value">${ex.restSeconds}s</div>
+                            </div>
+                        </div>
+                        ${ex.note ? `<div class="exercise-note">💡 ${ex.note}</div>` : ''}
+                    </div>
+                `;
+            });
+
+            document.getElementById('workoutContent').innerHTML = html;
+        }
+
+        init();
+    </script>
 </body>
 </html>
