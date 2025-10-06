@@ -1,0 +1,49 @@
+{
+  "Lifters": [
+    {
+      "Name": "Tobi",
+      "OneRepMaxes": {
+        "squat": 112.5,
+        "bench": 77.5,
+        "deadlift": 137.5,
+        "ohp": 45,
+        "rdl": 70,
+        "row": 70,
+        "curl": 30,
+        "triceps": 30,
+        "crunch": 0,
+        "calf": 90
+      }
+    },
+    {
+      "Name": "Luki",
+      "OneRepMaxes": {
+        "squat": 112.5,
+        "bench": 77.5,
+        "deadlift": 137.5,
+        "ohp": 45,
+        "rdl": 70,
+        "row": 70,
+        "curl": 30,
+        "triceps": 30,
+        "crunch": 0,
+        "calf": 90
+      }
+    },
+    {
+      "Name": "Simon",
+      "OneRepMaxes": {
+        "squat": 112.5,
+        "bench": 77.5,
+        "deadlift": 137.5,
+        "ohp": 45,
+        "rdl": 70,
+        "row": 70,
+        "curl": 30,
+        "triceps": 30,
+        "crunch": 0,
+        "calf": 90
+      }
+    }
+  ]
+}
