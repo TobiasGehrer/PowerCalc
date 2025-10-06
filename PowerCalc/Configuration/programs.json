@@ -907,12 +907,11 @@
             },
             {
               "name": "Overhead Press",
-              "sets": "1+2F",
+              "sets": "1/2",
               "reps": "6",
               "intensity": "81/76",
               "restSeconds": 90,
-              "liftType": "ohp",
-              "note": "F = Fail (-5%). Do 1 set at 81%, then 2 more sets. If you fail, use 76% for those sets."
+              "liftType": "ohp"
             },
             {
               "name": "Calf Raises",
@@ -1114,12 +1113,11 @@
             },
             {
               "name": "Pause Bench Press",
-              "sets": "1+2F",
+              "sets": "1/2",
               "reps": "4",
               "intensity": "81/76",
               "restSeconds": 180,
-              "liftType": "pauseBench",
-              "note": "F = Fail (-5%). Do 1 set at 81%, then 2 more sets. If you fail, use 76% for those sets."
+              "liftType": "pauseBench"
             },
             {
               "name": "Crunches",
@@ -1169,12 +1167,11 @@
             },
             {
               "name": "Overhead Press",
-              "sets": "1+1F",
+              "sets": "1/1",
               "reps": "7",
               "intensity": "79/74",
               "restSeconds": 90,
-              "liftType": "ohp",
-              "note": "F = Fail (-5%). Do 1 set at 79%, then 1 more set. If you fail, use 74% for that set."
+              "liftType": "ohp"
             },
             {
               "name": "Calf Raises",
@@ -1238,12 +1235,11 @@
             },
             {
               "name": "Pause Deadlift (Volume)",
-              "sets": "1+2F",
+              "sets": "1/2",
               "reps": "5",
               "intensity": "79/74",
               "restSeconds": 180,
-              "liftType": "pauseDeadlift",
-              "note": "F = Fail (-5%). Do 1 set at 79%, then 2 more sets. If you fail, use 74% for those sets."
+              "liftType": "pauseDeadlift"
             },
             {
               "name": "Bench Press",
@@ -1385,12 +1381,11 @@
             },
             {
               "name": "Pause Bench Press",
-              "sets": "1+2R",
+              "sets": "3",
               "reps": "4",
               "intensity": "81",
               "restSeconds": 180,
-              "liftType": "pauseBench",
-              "note": "R = Repeat. Do 1 set at 81%, then repeat the weight for 2 more sets."
+              "liftType": "pauseBench"
             },
             {
               "name": "Crunches",
@@ -1440,12 +1435,11 @@
             },
             {
               "name": "Overhead Press",
-              "sets": "1+2R",
+              "sets": "3",
               "reps": "6",
               "intensity": "79",
               "restSeconds": 90,
-              "liftType": "ohp",
-              "note": "R = Repeat. Do 1 set at 79%, then repeat the weight for 2 more sets."
+              "liftType": "ohp"
             },
             {
               "name": "Calf Raises",
@@ -1509,12 +1503,11 @@
             },
             {
               "name": "Pause Deadlift (Volume)",
-              "sets": "1+2R",
+              "sets": "3",
               "reps": "4",
               "intensity": "79",
               "restSeconds": 180,
-              "liftType": "pauseDeadlift",
-              "note": "R = Repeat. Do 1 set at 79%, then repeat the weight for 2 more sets."
+              "liftType": "pauseDeadlift"
             },
             {
               "name": "Bench Press",

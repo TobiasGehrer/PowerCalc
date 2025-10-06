@@ -1,8 +1,8 @@
 {
   "Lifters": [
     {
-      "name": "Tobi",
-      "oneRepMaxes": {
+      "Name": "Tobi",
+      "OneRepMaxes": {
         "squat": 112.5,
         "bench": 77.5,
         "deadlift": 137.5,
@@ -16,8 +16,8 @@
       }
     },
     {
-      "name": "Luki",
-      "oneRepMaxes": {
+      "Name": "Luki",
+      "OneRepMaxes": {
         "squat": 112.5,
         "bench": 77.5,
         "deadlift": 137.5,
@@ -31,8 +31,8 @@
       }
     },
     {
-      "name": "Simon",
-      "oneRepMaxes": {
+      "Name": "Simon",
+      "OneRepMaxes": {
         "squat": 112.5,
         "bench": 77.5,
         "deadlift": 137.5,

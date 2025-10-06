@@ -18,12 +18,12 @@ namespace PowerCalc
             builder.Services.AddSingleton<IProgramService, ProgramService>();
             builder.Services.AddSingleton<IStateService, StateService>();
 
-            // Add CORS for development
+            // Add CORS for development (Vite dev server)
             builder.Services.AddCors(options =>
             {
-                options.AddPolicy("AllowAll", 
+                options.AddPolicy("AllowReactDev",
                     policy => policy
-                    .AllowAnyOrigin()
+                    .WithOrigins("http://localhost:5173")
                     .AllowAnyMethod()
                     .AllowAnyHeader());
             });
@@ -37,12 +37,20 @@ namespace PowerCalc
             }
 
             app.UseHttpsRedirection();
-            app.UseCors("AllowAll");
+
+            if (app.Environment.IsDevelopment())
+            {
+                app.UseCors("AllowReactDev");
+            }
+
             app.UseDefaultFiles();
             app.UseStaticFiles();
             app.UseRouting();
             app.UseAuthorization();
-            app.MapControllers();            
+            app.MapControllers();
+
+            // Fallback to index.html for SPA routing
+            app.MapFallbackToFile("index.html");            
 
             app.Run();
         }

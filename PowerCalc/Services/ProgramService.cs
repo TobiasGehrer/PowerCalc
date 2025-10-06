@@ -53,27 +53,54 @@ namespace PowerCalc.Services
             {
                 var calcEx = new CalculatedExercise
                 {
-                    Name = exercise.Name,                    
+                    Name = exercise.Name,
                     Reps = exercise.Reps,
                     Intensity = exercise.Intensity,
                     RestSeconds = exercise.RestSeconds,
-                    LiftType = exercise.LiftType,
-                    Note = exercise.Note,
-                    
+                    LiftType = exercise.LiftType
                 };
 
-                // Calculate sets
-                int setCount = int.TryParse(exercise.Sets.Split('+')[0], out var count) ? count : 1;
-
-                for (int i = 1; i <= setCount; i++)
+                // Parse sets: "1/2" or "3"
+                var setCountsStr = exercise.Sets.Split('/');
+                var setCounts = new List<int>();
+                foreach (var s in setCountsStr)
                 {
-                    var weight = CalculateWeight(exercise, lifter);
-                    calcEx.Sets.Add(new SetInfo
+                    if (int.TryParse(s, out var count))
+                        setCounts.Add(count);
+                }
+
+                // If single number, treat as one group
+                if (setCounts.Count == 0)
+                    setCounts.Add(int.TryParse(exercise.Sets, out var c) ? c : 1);
+
+                // Parse intensity: "81/76" or "70"
+                var intensitiesStr = exercise.Intensity.Split('/');
+                var intensities = new List<decimal>();
+                foreach (var i in intensitiesStr)
+                {
+                    if (decimal.TryParse(i, out var intensity))
+                        intensities.Add(intensity);
+                }
+
+                if (intensities.Count == 0)
+                    intensities.Add(70);
+
+                // Generate sets
+                int setNumber = 1;
+                for (int i = 0; i < setCounts.Count; i++)
+                {
+                    var intensity = i < intensities.Count ? intensities[i] : intensities[0];
+                    var weight = CalculateWeight(lifter, exercise.LiftType, intensity);
+
+                    for (int j = 0; j < setCounts[i]; j++)
                     {
-                        SetNumber = i,
-                        Reps = exercise.Reps,
-                        Weight = weight
-                    });
+                        calcEx.Sets.Add(new SetInfo
+                        {
+                            SetNumber = setNumber++,
+                            Reps = exercise.Reps,
+                            Weight = weight
+                        });
+                    }
                 }
 
                 calculated.Exercises.Add(calcEx);
@@ -82,27 +109,23 @@ namespace PowerCalc.Services
             return calculated;
         }
 
-        private decimal CalculateWeight(Exercise exercise, Lifter lifter)
+        private decimal CalculateWeight(Lifter lifter, string liftType, decimal intensity)
         {
-            var liftType = GetBaseLiftType(exercise.LiftType);
+            var baseLiftType = GetBaseLiftType(liftType);
 
-            if (!lifter.OneRepMaxes.TryGetValue(liftType, out var max))
+            if (!lifter.OneRepMaxes.TryGetValue(baseLiftType, out var max))
             {
                 return 0;
             }
 
             // Handle pause variations (95% of main lift)
-            if (exercise.LiftType.StartsWith("pause"))
+            if (liftType.StartsWith("pause"))
             {
-                max *= 0.95m;            
+                max *= 0.95m;
             }
 
-            // Handle dual intensity (take first value)
-            var intensityStr = exercise.Intensity.Contains('/') ? exercise.Intensity.Split('/')[0] : exercise.Intensity;
-
-            var intesity = decimal.Parse(intensityStr);
-            var weight = max * intesity / 100m;
-            // ROund to nearest 2.5kg
+            var weight = max * intensity / 100m;
+            // Round to nearest 2.5kg
             return Math.Round(weight / 2.5m) * 2.5m;
         }
         

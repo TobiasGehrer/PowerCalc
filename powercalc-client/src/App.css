@@ -1,0 +1,360 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #1a1a1a;
+  --secondary: #2d2d2d;
+  --accent: #0066cc;
+  --text: #e0e0e0;
+  --text-secondary: #9e9e9e;
+  --border: #3d3d3d;
+  --success: #00a878;
+  --danger: #e63946;
+  --button-primary: #14b8a6;
+  --button-primary-hover: #0d9488;
+  --button-success: #14b8a6;
+  --button-success-hover: #0d9488;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  background: var(--primary);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+section {
+  background: var(--secondary);
+  padding: 25px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+}
+
+button {
+  padding: 12px 24px;
+  background: transparent;
+  color: var(--button-primary);
+  border: 2px solid var(--button-primary);
+  border-radius: 6px;
+  font-size: 1em;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+button:hover {
+  border-color: var(--button-primary-hover);
+  color: var(--button-primary-hover);
+}
+
+select,
+input {
+  padding: 12px;
+  background: var(--primary);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--text);
+  font-size: 1em;
+}
+
+select:focus,
+input:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.selection-controls {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 15px;
+  align-items: end;
+}
+
+.save-button {
+  background: var(--button-success);
+  color: white !important;
+  border-color: var(--button-success);
+}
+
+.save-button:hover {
+  background: var(--button-success-hover);
+  border-color: var(--button-success-hover);
+}
+
+.lifters-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 15px;
+}
+
+.lifter-card {
+  background: var(--primary);
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+
+.lifter-card h3 {
+  margin-bottom: 15px;
+}
+
+.lifter-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px 15px;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid var(--border);
+}
+
+.stat {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9em;
+}
+
+.stat-label {
+  color: var(--text-secondary);
+}
+
+.stat-value {
+  font-weight: 500;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.actions button {
+  flex: 1;
+  padding: 8px;
+  font-size: 0.9em;
+}
+
+.edit-button {
+  border-color: #6b7280;
+  color: #6b7280;
+}
+
+.edit-button:hover {
+  border-color: #4b5563;
+  color: #4b5563;
+}
+
+.delete-button {
+  border-color: #991b1b;
+  color: #991b1b;
+}
+
+.delete-button:hover {
+  border-color: #7f1d1d;
+  color: #7f1d1d;
+}
+
+.lifter-selection {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.lifter-checkbox {
+  background: var(--primary);
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: border-color 0.2s;
+}
+
+.lifter-checkbox:hover {
+  border-color: var(--accent);
+}
+
+.lifter-checkbox input[type='checkbox'] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.start-button {
+  width: 100%;
+  padding: 16px;
+  font-size: 1.1em;
+  background: var(--button-success);
+  color: white !important;
+  border-color: var(--button-success);
+}
+
+.start-button:hover {
+  background: var(--button-success-hover);
+  border-color: var(--button-success-hover);
+}
+
+/* Workout View */
+.workout-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  gap: 15px;
+}
+
+.back-button {
+  border-color: #6b7280;
+  color: #6b7280;
+}
+
+.back-button:hover {
+  border-color: #4b5563;
+  color: #4b5563;
+}
+
+.finish-button {
+  background: var(--button-success);
+  color: white !important;
+  border-color: var(--button-success);
+}
+
+.finish-button:hover {
+  background: var(--button-success-hover);
+  border-color: var(--button-success-hover);
+}
+
+.workout-content {
+  display: grid;
+  gap: 25px;
+}
+
+.workout-content[data-participants='1'] {
+  grid-template-columns: 1fr;
+}
+
+.workout-content[data-participants='2'] {
+  grid-template-columns: 1fr 1fr;
+}
+
+.workout-content[data-participants='3'] {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.lifter-workout {
+  background: var(--secondary);
+  padding: 25px;
+  border-radius: 8px;
+}
+
+.lifter-workout h2 {
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.lifter-exercises {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+
+.workout-content[data-participants='1'] .lifter-exercises {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.workout-content[data-participants='2'] .lifter-exercises {
+  grid-template-columns: 1fr 1fr;
+}
+
+.exercise {
+  background: var(--primary);
+  padding: 12px;
+  border-radius: 8px;
+  position: relative;
+}
+
+.exercise-badge {
+  position: absolute;
+  top: -14px;
+  left: -14px;
+  width: 28px;
+  height: 28px;
+  background: var(--button-success);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 0.9em;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.exercise-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--border);
+}
+
+.exercise-name {
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.exercise-rest {
+  font-size: 0.85em;
+  color: var(--text-secondary);
+}
+
+.sets-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85em;
+}
+
+.sets-table td {
+  padding: 4px 8px;
+  text-align: left;
+}
+
+.sets-table td:first-child {
+  color: var(--text-secondary);
+  font-size: 0.9em;
+  width: 50%;
+}
+
+.sets-table td:last-child {
+  text-align: right;
+  width: 50%;
+}
+
+.weight {
+  color: var(--accent);
+  font-weight: 600;
+}

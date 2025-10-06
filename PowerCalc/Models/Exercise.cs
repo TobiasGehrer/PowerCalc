@@ -8,6 +8,5 @@ namespace PowerCalc.Models
         public string Intensity { get; set; } = string.Empty;
         public int RestSeconds { get; set; }
         public string LiftType { get; set; } = string.Empty;
-        public string? Note { get; set; }
     }
 }
