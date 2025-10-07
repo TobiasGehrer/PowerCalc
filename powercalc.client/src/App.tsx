@@ -1,13 +1,14 @@
 import { useState } from 'react';
-import Dashboard from './components/Dashboard';
-import WorkoutView from './components/WorkoutView';
+import { WorkoutSession } from './types';
+import Dashboard from './pages/Dashboard';
+import WorkoutView from './pages/WorkoutView';
 import './App.css';
 
 function App() {
   const [currentView, setCurrentView] = useState('dashboard');
-  const [currentSession, setCurrentSession] = useState<any>(null);
+  const [currentSession, setCurrentSession] = useState<WorkoutSession | null>(null);
 
-  const handleStartWorkout = (session: any) => {
+  const handleStartWorkout = (session: WorkoutSession) => {
     setCurrentSession(session);
     setCurrentView('workout');
   };
