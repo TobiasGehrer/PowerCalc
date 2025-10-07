@@ -7,5 +7,10 @@
     <ShouldRunBuildScript>false</ShouldRunBuildScript>
     <!-- Folder where production build objects will be placed -->
     <BuildOutputFolder>$(MSBuildProjectDirectory)\dist</BuildOutputFolder>
+    <ShouldRunNpmInstall>false</ShouldRunNpmInstall>
   </PropertyGroup>
+  <ItemGroup>
+    <None Remove=".vscode\**" />
+    <None Remove=".gitignore" />
+  </ItemGroup>
 </Project>

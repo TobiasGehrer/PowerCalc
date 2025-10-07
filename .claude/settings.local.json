@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//mnt/d/Repos/RMCD-App/rmcd-app.client/src/**)",
+      "Read(//mnt/d/Repos/RMCD-App/**)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

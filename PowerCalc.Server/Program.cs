@@ -11,25 +11,24 @@ namespace PowerCalc.Server
 
             // Add services to the container.
             builder.Services.AddControllers();
-            builder.Services.AddEndpointsApiExplorer();
-            builder.Services.AddSwaggerGen();
 
             // Register PowerCalc services
             builder.Services.AddSingleton<ILifterService, LifterService>();
             builder.Services.AddSingleton<IProgramService, ProgramService>();
             builder.Services.AddSingleton<IStateService, StateService>();
 
+#if DEBUG
+            ConfigureCors(builder);
+#endif
+
             var app = builder.Build();
 
             app.UseDefaultFiles();
             app.UseStaticFiles();
 
-            // Configure the HTTP request pipeline.
-            if (app.Environment.IsDevelopment())
-            {
-                app.UseSwagger();
-                app.UseSwaggerUI();
-            }
+#if DEBUG
+            app.UseCors("AllowLocalhost");
+#endif
 
             app.UseHttpsRedirection();
 
@@ -41,6 +40,20 @@ namespace PowerCalc.Server
             app.MapFallbackToFile("/index.html");
 
             app.Run();
+        }
+
+        private static void ConfigureCors(WebApplicationBuilder builder)
+        {
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("AllowLocalhost",
+                    policy =>
+                    {
+                        policy.WithOrigins("https://localhost:62535")
+                              .AllowAnyHeader()
+                              .AllowAnyMethod();
+                    });
+            });
         }
     }
 }
