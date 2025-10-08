@@ -6,6 +6,7 @@ import WorkoutStarter from '../components/WorkoutStarter';
 import IconButton from '../components/IconButton';
 import { PlusIcon } from '../components/icons';
 import { getLifters, deleteLifter, getPrograms, getState, updateState, startWorkoutSession } from '../services/api';
+import MessageBox from '../components/MessageBox';
 
 interface DashboardProps {
   onStartWorkout: (session: WorkoutSession) => void;
@@ -15,6 +16,12 @@ export default function Dashboard({ onStartWorkout }: DashboardProps) {
   const [lifters, setLifters] = useState<Lifter[]>([]);
   const [programs, setPrograms] = useState<Program[]>([]);
   const [state, setState] = useState<AppState | null>(null);
+  const [messageBox, setMessageBox] = useState<{
+    type: 'info' | 'error' | 'confirm';
+    message: string;
+    onConfirm: () => void;
+    onCancel?: () => void;
+  } | null>(null);
 
   useEffect(() => {
     loadData();
@@ -29,20 +36,45 @@ export default function Dashboard({ onStartWorkout }: DashboardProps) {
       ]);
       setLifters(liftersData);
       setPrograms(programsData);
-      setState(stateData);
+
+      // Check if current program still exists
+      const currentProgramExists = programsData.some(
+        (p) => p.name === stateData.currentProgram
+      );
+
+      if (!currentProgramExists && programsData.length > 0) {
+        // Current program was deleted, switch to first available program
+        const newState = {
+          ...stateData,
+          currentProgram: programsData[0].name,
+          currentWeek: 1,
+          currentDay: 1,
+        };
+        setState(newState);
+        await updateState(newState);
+      } else {
+        setState(stateData);
+      }
     } catch (error) {
       console.error('Error loading data:', error);
     }
   };
 
   const handleDeleteLifter = async (name: string) => {
-    if (!confirm(`Delete ${name}?`)) return;
-    try {
-      await deleteLifter(name);
-      await loadData();
-    } catch (error) {
-      console.error('Error deleting lifter:', error);
-    }
+    setMessageBox({
+      type: 'confirm',
+      message: `Delete ${name}?`,
+      onConfirm: async () => {
+        setMessageBox(null);
+        try {
+          await deleteLifter(name);
+          await loadData();
+        } catch (error) {
+          console.error('Error deleting lifter:', error);
+        }
+      },
+      onCancel: () => setMessageBox(null),
+    });
   };
 
   const handleStateChange = async (field: string, value: any) => {
@@ -76,7 +108,11 @@ export default function Dashboard({ onStartWorkout }: DashboardProps) {
       onStartWorkout(session);
     } catch (error) {
       console.error('Error starting workout:', error);
-      alert('Failed to start workout');
+      setMessageBox({
+        type: 'error',
+        message: 'Failed to start workout',
+        onConfirm: () => setMessageBox(null),
+      });
     }
   };
 
@@ -91,6 +127,7 @@ export default function Dashboard({ onStartWorkout }: DashboardProps) {
           programs={programs}
           state={state}
           onStateChange={handleStateChange}
+          onProgramsUpdated={loadData}
         />
         <WorkoutStarter
           lifters={lifters}
@@ -117,6 +154,15 @@ export default function Dashboard({ onStartWorkout }: DashboardProps) {
           ))}
         </div>
       </section>
+
+      {messageBox && (
+        <MessageBox
+          type={messageBox.type}
+          message={messageBox.message}
+          onConfirm={messageBox.onConfirm}
+          onCancel={messageBox.onCancel}
+        />
+      )}
     </div>
   );
 }

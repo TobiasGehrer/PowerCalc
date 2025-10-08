@@ -33,5 +33,47 @@ namespace PowerCalc.Controllers
 
             return Ok(program);
         }
+
+        [HttpPost]
+        public ActionResult Create([FromBody] TrainingProgram program)
+        {
+            try
+            {
+                _programService.CreateProgram(program);
+                return CreatedAtAction(nameof(Get), new { name = program.Name }, program);
+            }
+            catch (InvalidOperationException ex)
+            {
+                return Conflict(ex.Message);
+            }
+        }
+
+        [HttpPut("{name}")]
+        public ActionResult Update(string name, [FromBody] TrainingProgram program)
+        {
+            try
+            {
+                _programService.UpdateProgram(name, program);
+                return Ok(program);
+            }
+            catch (KeyNotFoundException)
+            {
+                return NotFound();
+            }
+        }
+
+        [HttpDelete("{name}")]
+        public ActionResult Delete(string name)
+        {
+            try
+            {
+                _programService.DeleteProgram(name);
+                return NoContent();
+            }
+            catch (KeyNotFoundException)
+            {
+                return NotFound();
+            }
+        }
     }
 }

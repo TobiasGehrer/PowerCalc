@@ -1,5 +1,5 @@
 {
-  "Programs": [
+  "programs": [
     {
       "name": "Calgary 12-Week",
       "weeks": 12,
@@ -1578,6 +1578,35 @@
               "intensity": "70",
               "restSeconds": 90,
               "liftType": "calf"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Test",
+      "weeks": 1,
+      "days": 1,
+      "workouts": [
+        {
+          "week": 1,
+          "day": 1,
+          "exercises": [
+            {
+              "name": "",
+              "sets": "3",
+              "reps": "5",
+              "intensity": "70",
+              "restSeconds": 180,
+              "liftType": ""
+            },
+            {
+              "name": "",
+              "sets": "3",
+              "reps": "5",
+              "intensity": "70",
+              "restSeconds": 180,
+              "liftType": ""
             }
           ]
         }

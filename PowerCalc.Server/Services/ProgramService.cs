@@ -154,6 +154,57 @@ namespace PowerCalc.Services
             }) ?? new ProgramConfig();
         }
 
+        public void CreateProgram(TrainingProgram program)
+        {
+            var config = LoadConfig();
+
+            if (config.Programs.Any(p => p.Name.Equals(program.Name, StringComparison.OrdinalIgnoreCase)))
+            {
+                throw new InvalidOperationException($"Program with name '{program.Name}' already exists");
+            }
+
+            config.Programs.Add(program);
+            SaveConfig(config);
+        }
+
+        public void UpdateProgram(string name, TrainingProgram program)
+        {
+            var config = LoadConfig();
+            var existingIndex = config.Programs.FindIndex(p => p.Name.Equals(name, StringComparison.OrdinalIgnoreCase));
+
+            if (existingIndex == -1)
+            {
+                throw new KeyNotFoundException($"Program '{name}' not found");
+            }
+
+            config.Programs[existingIndex] = program;
+            SaveConfig(config);
+        }
+
+        public void DeleteProgram(string name)
+        {
+            var config = LoadConfig();
+            var programToRemove = config.Programs.FirstOrDefault(p => p.Name.Equals(name, StringComparison.OrdinalIgnoreCase));
+
+            if (programToRemove == null)
+            {
+                throw new KeyNotFoundException($"Program '{name}' not found");
+            }
+
+            config.Programs.Remove(programToRemove);
+            SaveConfig(config);
+        }
+
+        private void SaveConfig(ProgramConfig config)
+        {
+            var json = JsonSerializer.Serialize(config, new JsonSerializerOptions
+            {
+                PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
+                WriteIndented = true
+            });
+            File.WriteAllText(_configPath, json);
+        }
+
         private class ProgramConfig
         {
             public List<TrainingProgram> Programs { get; set; } = new();

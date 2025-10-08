@@ -31,6 +31,39 @@ export const getPrograms = async () => {
   return response.json();
 };
 
+export const getProgram = async (name) => {
+  const response = await fetch(`${API_BASE_URL}/programs/${encodeURIComponent(name)}`);
+  if (!response.ok) throw new Error('Failed to fetch program');
+  return response.json();
+};
+
+export const createProgram = async (program) => {
+  const response = await fetch(`${API_BASE_URL}/programs`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(program),
+  });
+  if (!response.ok) throw new Error('Failed to create program');
+  return response.json();
+};
+
+export const updateProgram = async (name, program) => {
+  const response = await fetch(`${API_BASE_URL}/programs/${encodeURIComponent(name)}`, {
+    method: 'PUT',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(program),
+  });
+  if (!response.ok) throw new Error('Failed to update program');
+  return response.json();
+};
+
+export const deleteProgram = async (name) => {
+  const response = await fetch(`${API_BASE_URL}/programs/${encodeURIComponent(name)}`, {
+    method: 'DELETE',
+  });
+  if (!response.ok) throw new Error('Failed to delete program');
+};
+
 // State
 export const getState = async () => {
   const response = await fetch(`${API_BASE_URL}/state`);

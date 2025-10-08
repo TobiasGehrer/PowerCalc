@@ -9,10 +9,29 @@ export interface Lifter {
   };
 }
 
+export interface Exercise {
+  name: string;
+  sets: string;
+  reps: string;
+  intensity: string;
+  restSeconds: number;
+  liftType: string;
+}
+
+export interface WorkoutDay {
+  week: number;
+  day: number;
+  exercises: Exercise[];
+}
+
 export interface Program {
   name: string;
   weeks: number;
   days: number;
+}
+
+export interface FullProgram extends Program {
+  workouts: WorkoutDay[];
 }
 
 export interface AppState {
