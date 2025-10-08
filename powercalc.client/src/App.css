@@ -1216,6 +1216,7 @@ input:focus {
   color: white !important;
   border: 2px solid var(--button-primary);
   padding: 10px 30px;
+  box-sizing: border-box;
 }
 
 .message-box-ok-button:hover,
@@ -1229,10 +1230,11 @@ input:focus {
   color: var(--text);
   border: 2px solid var(--border);
   padding: 10px 30px;
+  box-sizing: border-box;
 }
 
 .message-box-cancel-button:hover {
-  background: var(--secondary);
-  border-color: var(--border);
+  background: rgba(255, 255, 255, 0.05);
+  border-color: var(--text-secondary);
   color: var(--text);
 }

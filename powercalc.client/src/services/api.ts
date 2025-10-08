@@ -1,3 +1,5 @@
+import { AppState, Lifter, Program } from "../types";
+
 const API_BASE_URL = '/api';
 
 // Lifters
@@ -7,7 +9,7 @@ export const getLifters = async () => {
   return response.json();
 };
 
-export const createLifter = async (lifter) => {
+export const createLifter = async (lifter: Lifter) => {
   const response = await fetch(`${API_BASE_URL}/lifters`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
@@ -17,7 +19,7 @@ export const createLifter = async (lifter) => {
   return response.json();
 };
 
-export const deleteLifter = async (name) => {
+export const deleteLifter = async (name: string) => {
   const response = await fetch(`${API_BASE_URL}/lifters/${name}`, {
     method: 'DELETE',
   });
@@ -31,13 +33,13 @@ export const getPrograms = async () => {
   return response.json();
 };
 
-export const getProgram = async (name) => {
+export const getProgram = async (name: string) => {
   const response = await fetch(`${API_BASE_URL}/programs/${encodeURIComponent(name)}`);
   if (!response.ok) throw new Error('Failed to fetch program');
   return response.json();
 };
 
-export const createProgram = async (program) => {
+export const createProgram = async (program: Program) => {
   const response = await fetch(`${API_BASE_URL}/programs`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
@@ -47,7 +49,7 @@ export const createProgram = async (program) => {
   return response.json();
 };
 
-export const updateProgram = async (name, program) => {
+export const updateProgram = async (name: string, program: Program) => {
   const response = await fetch(`${API_BASE_URL}/programs/${encodeURIComponent(name)}`, {
     method: 'PUT',
     headers: { 'Content-Type': 'application/json' },
@@ -57,7 +59,7 @@ export const updateProgram = async (name, program) => {
   return response.json();
 };
 
-export const deleteProgram = async (name) => {
+export const deleteProgram = async (name: string) => {
   const response = await fetch(`${API_BASE_URL}/programs/${encodeURIComponent(name)}`, {
     method: 'DELETE',
   });
@@ -71,7 +73,7 @@ export const getState = async () => {
   return response.json();
 };
 
-export const updateState = async (state) => {
+export const updateState = async (state: AppState) => {
   const response = await fetch(`${API_BASE_URL}/state`, {
     method: 'PUT',
     headers: { 'Content-Type': 'application/json' },
