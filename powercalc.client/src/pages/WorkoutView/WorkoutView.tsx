@@ -1,7 +1,8 @@
-import { WorkoutSession } from '../types';
-import ExerciseCard from '../components/ExerciseCard';
-import { ArrowLeftIcon, CheckIcon } from '../components/icons';
-import { advanceState } from '../services/api';
+import { WorkoutSession } from '../../types';
+import ExerciseCard from '../../components/ExerciseCard/ExerciseCard';
+import { ArrowLeftIcon, CheckIcon } from '../../components/Icons/Icons';
+import { advanceState } from '../../services/api';
+import './WorkoutView.css';
 
 interface WorkoutViewProps {
   session: WorkoutSession;

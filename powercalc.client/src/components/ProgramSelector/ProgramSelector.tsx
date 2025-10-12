@@ -1,9 +1,10 @@
 import { useState } from 'react';
-import { Program, AppState } from '../types';
-import IconButton from './IconButton';
-import { ViewIcon, EditIcon, PlusIcon } from './icons';
-import ProgramView from '../pages/ProgramView';
-import ProgramEditor from '../pages/ProgramEditor';
+import { Program, AppState } from '../../types';
+import IconButton from '../IconButton/IconButton';
+import { ViewIcon, EditIcon, PlusIcon } from '../Icons/Icons';
+import ProgramView from '../../pages/ProgramView/ProgramView';
+import ProgramEditor from '../../pages/ProgramEditor/ProgramEditor';
+import './ProgramSelector.css';
 
 interface ProgramSelectorProps {
   programs: Program[];

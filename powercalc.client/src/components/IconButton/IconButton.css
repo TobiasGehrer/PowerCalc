@@ -1,0 +1,42 @@
+/* Icon Buttons */
+.icon-button {
+  border-color: var(--button-neutral);
+  color: var(--button-neutral);
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-button:hover {
+  border-color: var(--button-neutral-hover);
+  color: var(--button-neutral-hover);
+}
+
+.icon-button svg {
+  width: 18px;
+  height: 18px;
+}
+
+.icon-button-primary {
+  border-color: var(--button-primary);
+  color: var(--button-primary);
+}
+
+.icon-button-primary:hover {
+  border-color: var(--button-primary-hover);
+  color: var(--button-primary-hover);
+}
+
+.delete-icon-button {
+  border-color: var(--button-danger) !important;
+  color: var(--button-danger) !important;
+}
+
+.delete-icon-button:hover {
+  border-color: var(--button-danger-hover) !important;
+  color: var(--button-danger-hover) !important;
+}

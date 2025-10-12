@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
-import { FullProgram, WorkoutDay } from '../types';
-import { getProgram } from '../services/api';
-import { ArrowLeftIcon, ArrowRightIcon } from '../components/icons';
+import { FullProgram, WorkoutDay } from '../../types';
+import { getProgram } from '../../services/api';
+import { ArrowLeftIcon, ArrowRightIcon } from '../../components/Icons/Icons';
+import './ProgramView.css';
 
 interface ProgramViewProps {
   programName: string;

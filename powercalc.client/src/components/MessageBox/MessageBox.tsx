@@ -1,3 +1,5 @@
+import './MessageBox.css';
+
 interface MessageBoxProps {
   type: 'info' | 'error' | 'confirm';
   message: string;

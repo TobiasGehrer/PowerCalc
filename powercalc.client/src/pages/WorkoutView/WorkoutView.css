@@ -1,0 +1,98 @@
+/* Workout View */
+.workout-view {
+  width: 100%;
+}
+
+.workout-title-section {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 2px solid var(--border);
+}
+
+.workout-title-section h1 {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.workout-subtitle {
+  font-size: 1.2em;
+  font-weight: 500;
+  color: var(--text-secondary);
+  text-align: center;
+}
+
+.finish-workout-button {
+  justify-self: end;
+}
+
+.finish-workout-button {
+  width: calc(36px * 3 + 8px * 2);
+  height: 36px;
+  padding: 0;
+  border-radius: 6px;
+  background: var(--button-primary);
+  color: white !important;
+  border: 2px solid var(--button-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.finish-workout-button:hover {
+  background: var(--button-primary-hover);
+  border-color: var(--button-primary-hover);
+}
+
+.finish-workout-button svg {
+  width: 20px;
+  height: 20px;
+}
+
+.workout-content {
+  display: grid;
+  gap: 25px;
+  margin-top: 32px;
+}
+
+.workout-content[data-participants='1'] {
+  grid-template-columns: 1fr;
+}
+
+.workout-content[data-participants='2'] {
+  grid-template-columns: 1fr 1fr;
+}
+
+.workout-content[data-participants='3'] {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.lifter-workout {
+  background: var(--secondary);
+  padding: 25px;
+  border-radius: 8px;
+}
+
+.lifter-workout h2 {
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.lifter-exercises {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+
+.workout-content[data-participants='1'] .lifter-exercises {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.workout-content[data-participants='2'] .lifter-exercises {
+  grid-template-columns: 1fr 1fr;
+}

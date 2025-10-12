@@ -1,6 +1,7 @@
-import { Lifter } from '../types';
-import IconButton from './IconButton';
-import { EditIcon, DeleteIcon } from './icons';
+import { Lifter } from '../../types';
+import IconButton from '../IconButton/IconButton';
+import { EditIcon, DeleteIcon } from '../Icons/Icons';
+import './LifterCard.css';
 
 interface LifterCardProps {
   lifter: Lifter;

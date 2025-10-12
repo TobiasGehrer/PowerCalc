@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { WorkoutSession } from './types';
-import Dashboard from './pages/Dashboard';
-import WorkoutView from './pages/WorkoutView';
+import Dashboard from './pages/Dashboard/Dashboard';
+import WorkoutView from './pages/WorkoutView/WorkoutView';
 import './App.css';
 
 function App() {

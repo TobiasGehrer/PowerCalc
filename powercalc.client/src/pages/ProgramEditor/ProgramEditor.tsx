@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react';
-import { FullProgram, WorkoutDay, Exercise } from '../types';
-import { getProgram, createProgram, updateProgram, deleteProgram } from '../services/api';
-import { ArrowLeftIcon, ArrowRightIcon, PlusIcon, DeleteIcon, CopyIcon, PasteIcon, SaveIcon, InfoIcon } from '../components/icons';
-import MessageBox from '../components/MessageBox';
+import { FullProgram, WorkoutDay, Exercise } from '../../types';
+import { getProgram, createProgram, updateProgram, deleteProgram } from '../../services/api';
+import { ArrowLeftIcon, ArrowRightIcon, PlusIcon, DeleteIcon, CopyIcon, PasteIcon, SaveIcon, InfoIcon } from '../../components/Icons/Icons';
+import MessageBox from '../../components/MessageBox/MessageBox';
+import './ProgramEditor.css';
 
 interface ProgramEditorProps {
   programName?: string; // undefined for new program

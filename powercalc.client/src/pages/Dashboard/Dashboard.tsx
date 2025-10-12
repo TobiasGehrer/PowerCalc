@@ -1,12 +1,11 @@
 import { useState, useEffect } from 'react';
-import { Lifter, Program, AppState, WorkoutSession } from '../types';
-import LifterCard from '../components/LifterCard';
-import ProgramSelector from '../components/ProgramSelector';
-import WorkoutStarter from '../components/WorkoutStarter';
-import IconButton from '../components/IconButton';
-import { PlusIcon } from '../components/icons';
-import { getLifters, deleteLifter, getPrograms, getState, updateState, startWorkoutSession } from '../services/api';
-import MessageBox from '../components/MessageBox';
+import { Lifter, Program, AppState, WorkoutSession } from '../../types';
+import ProgramSelector from '../../components/ProgramSelector/ProgramSelector';
+import WorkoutStarter from '../../components/WorkoutStarter/WorkoutStarter';
+import LiftersSection from '../../components/LiftersSection/LiftersSection';
+import { getLifters, deleteLifter, getPrograms, getState, updateState, startWorkoutSession } from '../../services/api';
+import MessageBox from '../../components/MessageBox/MessageBox';
+import './Dashboard.css';
 
 interface DashboardProps {
   onStartWorkout: (session: WorkoutSession) => void;
@@ -60,21 +59,17 @@ export default function Dashboard({ onStartWorkout }: DashboardProps) {
     }
   };
 
+  const handleAddLifter = () => {
+    // TODO: Implement add lifter functionality
+  };
+
   const handleDeleteLifter = async (name: string) => {
-    setMessageBox({
-      type: 'confirm',
-      message: `Delete ${name}?`,
-      onConfirm: async () => {
-        setMessageBox(null);
-        try {
-          await deleteLifter(name);
-          await loadData();
-        } catch (error) {
-          console.error('Error deleting lifter:', error);
-        }
-      },
-      onCancel: () => setMessageBox(null),
-    });
+    try {
+      await deleteLifter(name);
+      await loadData();
+    } catch (error) {
+      console.error('Error deleting lifter:', error);
+    }
   };
 
   const handleStateChange = async (field: string, value: any) => {
@@ -135,25 +130,11 @@ export default function Dashboard({ onStartWorkout }: DashboardProps) {
         />
       </div>
 
-      <section className="lifters-section">
-        <h2>Lifters</h2>
-        <IconButton
-          icon={<PlusIcon />}
-          title="Add Lifter"
-          variant="primary"
-          className="lifters-add-button"
-        />
-        <div className="lifters-grid">
-          {lifters.map((lifter) => (
-            <LifterCard
-              key={lifter.name}
-              lifter={lifter}
-              onEdit={() => {}}
-              onDelete={handleDeleteLifter}
-            />
-          ))}
-        </div>
-      </section>
+      <LiftersSection
+        lifters={lifters}
+        onAddLifter={handleAddLifter}
+        onDeleteLifter={handleDeleteLifter}
+      />
 
       {messageBox && (
         <MessageBox

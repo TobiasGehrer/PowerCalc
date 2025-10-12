@@ -1,4 +1,5 @@
-import { WorkoutExercise } from '../types';
+import { WorkoutExercise } from '../../types';
+import './ExerciseCard.css';
 
 interface ExerciseCardProps {
   exercise: WorkoutExercise;

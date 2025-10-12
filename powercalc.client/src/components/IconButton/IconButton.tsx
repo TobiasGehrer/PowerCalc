@@ -1,3 +1,5 @@
+import './IconButton.css';
+
 interface IconButtonProps {
   icon: React.ReactNode;
   onClick?: () => void;

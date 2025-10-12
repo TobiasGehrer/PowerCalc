@@ -1,6 +1,7 @@
 import { useState } from 'react';
-import { Lifter } from '../types';
-import { UserIcon, PlayIcon } from './icons';
+import { Lifter } from '../../types';
+import { UserIcon, PlayIcon } from '../Icons/Icons';
+import './WorkoutStarter.css';
 
 interface WorkoutStarterProps {
   lifters: Lifter[];
