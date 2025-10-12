@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { FullProgram, WorkoutDay } from '../../types';
-import { getProgram } from '../../services/api';
+import { getProgram } from '../../services/programsService';
 import { ArrowLeftIcon, ArrowRightIcon } from '../../components/Icons/Icons';
 import './ProgramView.css';
 

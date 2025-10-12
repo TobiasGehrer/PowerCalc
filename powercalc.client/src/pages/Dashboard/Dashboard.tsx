@@ -3,7 +3,10 @@ import { Lifter, Program, AppState, WorkoutSession } from '../../types';
 import ProgramSelector from '../../components/ProgramSelector/ProgramSelector';
 import WorkoutStarter from '../../components/WorkoutStarter/WorkoutStarter';
 import LiftersSection from '../../components/LiftersSection/LiftersSection';
-import { getLifters, deleteLifter, getPrograms, getState, updateState, startWorkoutSession } from '../../services/api';
+import { getLifters, deleteLifter } from '../../services/liftersService'
+import { getPrograms } from '../../services/programsService'
+import { getState, updateState } from '../../services/stateService';
+import { startWorkoutSession } from '../../services/workoutsService'
 import MessageBox from '../../components/MessageBox/MessageBox';
 import './Dashboard.css';
 

@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { FullProgram, WorkoutDay, Exercise } from '../../types';
-import { getProgram, createProgram, updateProgram, deleteProgram } from '../../services/api';
+import { getProgram, createProgram, updateProgram, deleteProgram } from '../../services/programsService';
 import { ArrowLeftIcon, ArrowRightIcon, PlusIcon, DeleteIcon, CopyIcon, PasteIcon, SaveIcon, InfoIcon } from '../../components/Icons/Icons';
 import MessageBox from '../../components/MessageBox/MessageBox';
 import './ProgramEditor.css';
