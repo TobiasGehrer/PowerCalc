@@ -48,7 +48,7 @@ namespace PowerCalc.Controllers
             }
         }
 
-        [HttpPut("name")]
+        [HttpPut("{name}")]
         public ActionResult Update(string name, [FromBody] Lifter lifter)
         {
             try

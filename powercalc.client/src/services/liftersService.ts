@@ -12,6 +12,13 @@ export const createLifter = async (lifter: Lifter): Promise<Lifter> => {
   });
 };
 
+export const updateLifter = async (oldName: string, lifter: Lifter): Promise<void> => {
+  return apiRequest<void>(`/lifters/${encodeURIComponent(oldName)}`, {
+    method: 'PUT',
+    body: JSON.stringify(lifter),
+  });
+};
+
 export const deleteLifter = async (name: string): Promise<void> => {
   return apiRequest<void>(`/lifters/${encodeURIComponent(name)}`, {
     method: 'DELETE',

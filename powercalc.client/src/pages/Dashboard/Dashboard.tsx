@@ -3,7 +3,8 @@ import { Lifter, Program, AppState, WorkoutSession } from '../../types';
 import ProgramSelector from '../../components/ProgramSelector/ProgramSelector';
 import WorkoutStarter from '../../components/WorkoutStarter/WorkoutStarter';
 import LiftersSection from '../../components/LiftersSection/LiftersSection';
-import { getLifters, deleteLifter } from '../../services/liftersService'
+import LifterFormModal from '../../components/LifterFormModal/LifterFormModal';
+import { getLifters, deleteLifter, createLifter, updateLifter } from '../../services/liftersService'
 import { getPrograms } from '../../services/programsService'
 import { getState, updateState } from '../../services/stateService';
 import { startWorkoutSession } from '../../services/workoutsService'
@@ -18,6 +19,7 @@ export default function Dashboard({ onStartWorkout }: DashboardProps) {
   const [lifters, setLifters] = useState<Lifter[]>([]);
   const [programs, setPrograms] = useState<Program[]>([]);
   const [state, setState] = useState<AppState | null>(null);
+  const [lifterFormModal, setLifterFormModal] = useState<{ lifter?: Lifter } | null>(null);
   const [messageBox, setMessageBox] = useState<{
     type: 'info' | 'error' | 'confirm';
     message: string;
@@ -68,7 +70,36 @@ export default function Dashboard({ onStartWorkout }: DashboardProps) {
   };
 
   const handleAddLifter = () => {
-    // TODO: Implement add lifter functionality
+    setLifterFormModal({});
+  };
+
+  const handleEditLifter = (name: string) => {
+    const lifter = lifters.find((l) => l.name === name);
+    if (lifter) {
+      setLifterFormModal({ lifter });
+    }
+  };
+
+  const handleSaveLifter = async (lifter: Lifter) => {
+    try {
+      const isEditing = lifterFormModal?.lifter;
+
+      if (isEditing) {
+        await updateLifter(lifterFormModal.lifter!.name, lifter);
+      } else {
+        await createLifter(lifter);
+      }
+
+      setLifterFormModal(null);
+      await loadData();
+    } catch (error) {
+      console.error('Error saving lifter:', error);
+      setMessageBox({
+        type: 'error',
+        message: 'Failed to save lifter',
+        onConfirm: () => setMessageBox(null),
+      });
+    }
   };
 
   const handleDeleteLifter = async (name: string) => {
@@ -143,8 +174,17 @@ export default function Dashboard({ onStartWorkout }: DashboardProps) {
       <LiftersSection
         lifters={lifters}
         onAddLifter={handleAddLifter}
+        onEditLifter={handleEditLifter}
         onDeleteLifter={handleDeleteLifter}
       />
+
+      {lifterFormModal && (
+        <LifterFormModal
+          lifter={lifterFormModal.lifter}
+          onSave={handleSaveLifter}
+          onCancel={() => setLifterFormModal(null)}
+        />
+      )}
 
       {messageBox && (
         <MessageBox

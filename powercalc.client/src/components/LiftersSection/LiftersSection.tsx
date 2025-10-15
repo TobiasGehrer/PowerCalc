@@ -9,10 +9,11 @@ import './LiftersSection.css';
 interface LiftersSectionProps {
   lifters: Lifter[];
   onAddLifter: () => void;
+  onEditLifter: (name: string) => void;
   onDeleteLifter: (name: string) => void;
 }
 
-export default function LiftersSection({ lifters, onAddLifter, onDeleteLifter }: LiftersSectionProps) {
+export default function LiftersSection({ lifters, onAddLifter, onEditLifter, onDeleteLifter }: LiftersSectionProps) {
   const [messageBox, setMessageBox] = useState<{
     type: 'info' | 'error' | 'confirm';
     message: string;
@@ -48,7 +49,7 @@ export default function LiftersSection({ lifters, onAddLifter, onDeleteLifter }:
             <LifterCard
               key={lifter.name}
               lifter={lifter}
-              onEdit={() => {}}
+              onEdit={onEditLifter}
               onDelete={handleDeleteLifter}
             />
           ))}
