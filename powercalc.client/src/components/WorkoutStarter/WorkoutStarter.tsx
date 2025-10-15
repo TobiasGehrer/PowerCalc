@@ -1,20 +1,20 @@
-import { useState } from 'react';
 import { Lifter } from '../../types';
 import { UserIcon, PlayIcon } from '../Icons/Icons';
 import './WorkoutStarter.css';
 
 interface WorkoutStarterProps {
   lifters: Lifter[];
+  selectedLifters: string[];
   onStartWorkout: (selectedLifters: string[]) => void;
+  onSelectedLiftersChange: (selectedLifters: string[]) => void;
 }
 
-export default function WorkoutStarter({ lifters, onStartWorkout }: WorkoutStarterProps) {
-  const [selectedLifters, setSelectedLifters] = useState<string[]>([]);
-
+export default function WorkoutStarter({ lifters, selectedLifters, onStartWorkout, onSelectedLiftersChange }: WorkoutStarterProps) {
   const toggleLifterSelection = (name: string) => {
-    setSelectedLifters((prev) =>
-      prev.includes(name) ? prev.filter((n) => n !== name) : [...prev, name]
-    );
+    const newSelection = selectedLifters.includes(name)
+      ? selectedLifters.filter((n) => n !== name)
+      : [...selectedLifters, name];
+    onSelectedLiftersChange(newSelection);
   };
 
   const handleStartWorkout = () => {

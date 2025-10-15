@@ -38,6 +38,7 @@ export interface AppState {
   currentProgram: string;
   currentWeek: number;
   currentDay: number;
+  selectedLifters: string[];
 }
 
 export interface WorkoutSet {

@@ -44,6 +44,11 @@ export default function Dashboard({ onStartWorkout }: DashboardProps) {
         (p) => p.name === stateData.currentProgram
       );
 
+      // Ensure selectedLifters exists (for backward compatibility)
+      if (!stateData.selectedLifters) {
+        stateData.selectedLifters = [];
+      }
+
       if (!currentProgramExists && programsData.length > 0) {
         // Current program was deleted, switch to first available program
         const newState = {
@@ -129,7 +134,9 @@ export default function Dashboard({ onStartWorkout }: DashboardProps) {
         />
         <WorkoutStarter
           lifters={lifters}
+          selectedLifters={state.selectedLifters}
           onStartWorkout={handleStartWorkout}
+          onSelectedLiftersChange={(selectedLifters) => handleStateChange('selectedLifters', selectedLifters)}
         />
       </div>
 
