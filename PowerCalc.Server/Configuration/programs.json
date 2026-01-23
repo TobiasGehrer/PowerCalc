@@ -120,7 +120,7 @@
             {
               "name": "Row",
               "sets": "4",
-              "reps": "10",
+              "reps": "8",
               "intensity": "70",
               "restSeconds": 90,
               "liftType": "row"
@@ -166,7 +166,7 @@
             {
               "name": "Row",
               "sets": "4",
-              "reps": "10",
+              "reps": "8",
               "intensity": "70",
               "restSeconds": 90,
               "liftType": "row"
@@ -186,12 +186,12 @@
           "day": 2,
           "exercises": [
             {
-              "name": "Pause Deadlift",
+              "name": "Deadlift",
               "sets": "4",
               "reps": "5",
               "intensity": "76",
               "restSeconds": 180,
-              "liftType": "pauseDeadlift"
+              "liftType": "deadlift"
             },
             {
               "name": "Bench Press",
@@ -204,7 +204,7 @@
             {
               "name": "Row",
               "sets": "4",
-              "reps": "10",
+              "reps": "8",
               "intensity": "70",
               "restSeconds": 90,
               "liftType": "row"
@@ -242,7 +242,7 @@
             {
               "name": "Row",
               "sets": "6",
-              "reps": "10",
+              "reps": "8",
               "intensity": "70",
               "restSeconds": 90,
               "liftType": "row"
@@ -380,7 +380,7 @@
             {
               "name": "Row",
               "sets": "4",
-              "reps": "10",
+              "reps": "8",
               "intensity": "70",
               "restSeconds": 90,
               "liftType": "row"
@@ -426,7 +426,7 @@
             {
               "name": "Row",
               "sets": "4",
-              "reps": "10",
+              "reps": "8",
               "intensity": "70",
               "restSeconds": 90,
               "liftType": "row"
@@ -446,12 +446,12 @@
           "day": 2,
           "exercises": [
             {
-              "name": "Pause Deadlift",
+              "name": "Deadlift",
               "sets": "5",
               "reps": "3",
               "intensity": "81",
               "restSeconds": 180,
-              "liftType": "pauseDeadlift"
+              "liftType": "deadlift"
             },
             {
               "name": "Bench Press",
@@ -706,12 +706,12 @@
           "day": 2,
           "exercises": [
             {
-              "name": "Pause Deadlift",
+              "name": "Deadlift",
               "sets": "4",
               "reps": "2",
               "intensity": "87",
               "restSeconds": 180,
-              "liftType": "pauseDeadlift"
+              "liftType": "deadlift"
             },
             {
               "name": "Bench Press",
@@ -900,7 +900,7 @@
             {
               "name": "Row",
               "sets": "4",
-              "reps": "10",
+              "reps": "8",
               "intensity": "70",
               "restSeconds": 90,
               "liftType": "row"
@@ -946,7 +946,7 @@
             {
               "name": "Row",
               "sets": "4",
-              "reps": "10",
+              "reps": "8",
               "intensity": "70",
               "restSeconds": 90,
               "liftType": "row"
@@ -966,12 +966,12 @@
           "day": 2,
           "exercises": [
             {
-              "name": "Pause Deadlift",
+              "name": "Deadlift",
               "sets": "4",
               "reps": "5",
               "intensity": "76",
               "restSeconds": 180,
-              "liftType": "pauseDeadlift"
+              "liftType": "deadlift"
             },
             {
               "name": "Bench Press",
@@ -984,7 +984,7 @@
             {
               "name": "Row",
               "sets": "4",
-              "reps": "10",
+              "reps": "8",
               "intensity": "70",
               "restSeconds": 90,
               "liftType": "row"
@@ -1022,7 +1022,7 @@
             {
               "name": "Row",
               "sets": "6",
-              "reps": "10",
+              "reps": "8",
               "intensity": "70",
               "restSeconds": 90,
               "liftType": "row"
@@ -1160,7 +1160,7 @@
             {
               "name": "Row",
               "sets": "4",
-              "reps": "10",
+              "reps": "8",
               "intensity": "70",
               "restSeconds": 90,
               "liftType": "row"
@@ -1206,7 +1206,7 @@
             {
               "name": "Row",
               "sets": "4",
-              "reps": "10",
+              "reps": "8",
               "intensity": "70",
               "restSeconds": 90,
               "liftType": "row"
@@ -1226,20 +1226,20 @@
           "day": 2,
           "exercises": [
             {
-              "name": "Pause Deadlift",
+              "name": "Deadlift",
               "sets": "1",
               "reps": "3",
               "intensity": "81",
               "restSeconds": 180,
-              "liftType": "pauseDeadlift"
+              "liftType": "deadlift"
             },
             {
-              "name": "Pause Deadlift (Volume)",
+              "name": "Deadlift (Volume)",
               "sets": "1/2",
               "reps": "5",
               "intensity": "79/74",
               "restSeconds": 180,
-              "liftType": "pauseDeadlift"
+              "liftType": "deadlift"
             },
             {
               "name": "Bench Press",
@@ -1252,7 +1252,7 @@
             {
               "name": "Row",
               "sets": "4",
-              "reps": "10",
+              "reps": "8",
               "intensity": "70",
               "restSeconds": 90,
               "liftType": "row"
@@ -1290,7 +1290,7 @@
             {
               "name": "Row",
               "sets": "6",
-              "reps": "10",
+              "reps": "8",
               "intensity": "70",
               "restSeconds": 90,
               "liftType": "row"
@@ -1494,20 +1494,20 @@
           "day": 2,
           "exercises": [
             {
-              "name": "Pause Deadlift",
+              "name": "Deadlift",
               "sets": "1",
               "reps": "2",
               "intensity": "84",
               "restSeconds": 180,
-              "liftType": "pauseDeadlift"
+              "liftType": "deadlift"
             },
             {
-              "name": "Pause Deadlift (Volume)",
+              "name": "Deadlift (Volume)",
               "sets": "3",
               "reps": "4",
               "intensity": "79",
               "restSeconds": 180,
-              "liftType": "pauseDeadlift"
+              "liftType": "deadlift"
             },
             {
               "name": "Bench Press",
