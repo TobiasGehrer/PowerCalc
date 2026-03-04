@@ -686,7 +686,7 @@
             {
               "name": "Row",
               "sets": "4",
-              "reps": "10",
+              "reps": "8",
               "intensity": "70",
               "restSeconds": 90,
               "liftType": "row"
