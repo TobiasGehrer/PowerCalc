@@ -1582,6 +1582,215 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Calgary 8-Week",
+      "weeks": 8,
+      "days": 3,
+      "workouts": [
+        {
+          "week": 1,
+          "day": 1,
+          "exercises": [
+            {
+              "name": "Squat",
+              "sets": "4",
+              "reps": "3",
+              "intensity": "82",
+              "restSeconds": 180,
+              "liftType": "squat"
+            },
+            {
+              "name": "Squat (Volume)",
+              "sets": "2",
+              "reps": "5",
+              "intensity": "70",
+              "restSeconds": 180,
+              "liftType": "squat"
+            },
+            {
+              "name": "Bench Press",
+              "sets": "5",
+              "reps": "3",
+              "intensity": "82",
+              "restSeconds": 180,
+              "liftType": "bench"
+            },
+            {
+              "name": "Bench Press (Volume)",
+              "sets": "3",
+              "reps": "5",
+              "intensity": "70",
+              "restSeconds": 180,
+              "liftType": "bench"
+            },
+            {
+              "name": "Biceps Curls",
+              "sets": "2",
+              "reps": "8-12",
+              "intensity": "70",
+              "restSeconds": 90,
+              "liftType": "curl"
+            }
+          ]
+        },
+        {
+          "week": 2,
+          "day": 1,
+          "exercises": []
+        },
+        {
+          "week": 3,
+          "day": 1,
+          "exercises": []
+        },
+        {
+          "week": 4,
+          "day": 1,
+          "exercises": []
+        },
+        {
+          "week": 5,
+          "day": 1,
+          "exercises": []
+        },
+        {
+          "week": 6,
+          "day": 1,
+          "exercises": []
+        },
+        {
+          "week": 7,
+          "day": 1,
+          "exercises": []
+        },
+        {
+          "week": 8,
+          "day": 1,
+          "exercises": []
+        },
+        {
+          "week": 1,
+          "day": 2,
+          "exercises": [
+            {
+              "name": "Deadlift",
+              "sets": "4",
+              "reps": "3",
+              "intensity": "82",
+              "restSeconds": 180,
+              "liftType": "deadlift"
+            },
+            {
+              "name": "Deadlift (Volume)",
+              "sets": "2",
+              "reps": "5",
+              "intensity": "70",
+              "restSeconds": 180,
+              "liftType": "deadlift"
+            },
+            {
+              "name": "Pause Bench Press",
+              "sets": "4",
+              "reps": "3",
+              "intensity": "81",
+              "restSeconds": 180,
+              "liftType": "pauseBench"
+            },
+            {
+              "name": "Crunches",
+              "sets": "2",
+              "reps": "8-12",
+              "intensity": "70",
+              "restSeconds": 90,
+              "liftType": "crunch"
+            },
+            {
+              "name": "Triceps Pushdown",
+              "sets": "2",
+              "reps": "8-12",
+              "intensity": "70",
+              "restSeconds": 90,
+              "liftType": "triceps"
+            }
+          ]
+        },
+        {
+          "week": 2,
+          "day": 2,
+          "exercises": []
+        },
+        {
+          "week": 3,
+          "day": 2,
+          "exercises": []
+        },
+        {
+          "week": 4,
+          "day": 2,
+          "exercises": []
+        },
+        {
+          "week": 5,
+          "day": 2,
+          "exercises": []
+        },
+        {
+          "week": 6,
+          "day": 2,
+          "exercises": []
+        },
+        {
+          "week": 7,
+          "day": 2,
+          "exercises": []
+        },
+        {
+          "week": 8,
+          "day": 2,
+          "exercises": []
+        },
+        {
+          "week": 1,
+          "day": 3,
+          "exercises": []
+        },
+        {
+          "week": 2,
+          "day": 3,
+          "exercises": []
+        },
+        {
+          "week": 3,
+          "day": 3,
+          "exercises": []
+        },
+        {
+          "week": 4,
+          "day": 3,
+          "exercises": []
+        },
+        {
+          "week": 5,
+          "day": 3,
+          "exercises": []
+        },
+        {
+          "week": 6,
+          "day": 3,
+          "exercises": []
+        },
+        {
+          "week": 7,
+          "day": 3,
+          "exercises": []
+        },
+        {
+          "week": 8,
+          "day": 3,
+          "exercises": []
+        }
+      ]
     }
   ]
 }
