@@ -21,7 +21,6 @@ publish/
 # Node
 node_modules/
 npm-debug.log
-package-lock.json
 
 # Frontend build output
 powercalc.client/dist/

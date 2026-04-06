@@ -22,13 +22,18 @@ COPY ["PowerCalc.Server/PowerCalc.Server.csproj", "PowerCalc.Server/"]
 COPY ["powercalc.client/powercalc.client.esproj", "powercalc.client/"]
 RUN dotnet restore "./PowerCalc.Server/PowerCalc.Server.csproj"
 COPY . .
+
+# Install npm dependencies properly for Linux before building
+WORKDIR "/src/powercalc.client"
+RUN npm ci
+
 WORKDIR "/src/PowerCalc.Server"
 RUN dotnet build "./PowerCalc.Server.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
 # This stage is used to publish the service project to be copied to the final stage
 FROM build AS publish
 ARG BUILD_CONFIGURATION=Release
-RUN dotnet publish "./PowerCalc.Server.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
+RUN dotnet publish "./PowerCalc.Server.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false --verbosity detailed
 
 # This stage is used in production or when running from VS in regular mode (Default when not using the Debug configuration)
 FROM base AS final
