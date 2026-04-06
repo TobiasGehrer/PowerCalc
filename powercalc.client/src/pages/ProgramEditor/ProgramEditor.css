@@ -1,0 +1,399 @@
+/* Program Editor */
+.program-editor {
+  max-width: 1200px;
+}
+
+.program-editor-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 25px;
+  border-bottom: 2px solid var(--border);
+}
+
+.program-editor-header h2 {
+  margin: 0;
+  font-size: 1.3em;
+}
+
+.header-left-actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.header-actions {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.help-icon-button {
+  background: transparent;
+  border: none;
+  color: var(--text);
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 24px;
+}
+
+.help-icon-button:hover {
+  background: var(--primary);
+  border: none;
+  color: var(--button-neutral);
+}
+
+.save-icon-button {
+  background: transparent;
+  border: none;
+  color: var(--accent);
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.save-icon-button:hover:not(:disabled) {
+  background: var(--primary);
+  border: none;
+  color: var(--accent);
+  opacity: 0.8;
+}
+
+.save-icon-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.save-icon-button svg {
+  width: 24px;
+  height: 24px;
+}
+
+.delete-icon-button-header {
+  background: transparent;
+  border: none;
+  color: var(--button-danger);
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.delete-icon-button-header:hover:not(:disabled) {
+  background: var(--primary);
+  border: none;
+  color: var(--button-danger-hover);
+}
+
+.delete-icon-button-header:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.delete-icon-button-header svg {
+  width: 24px;
+  height: 24px;
+}
+
+.program-editor-body {
+  padding: 25px;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.program-info-section {
+  background: var(--primary);
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border: 1px solid var(--border);
+}
+
+.program-meta-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 15px;
+}
+
+.program-name-field {
+  grid-column: span 1;
+}
+
+.program-weeks-field {
+  grid-column: span 1;
+}
+
+.program-days-field {
+  grid-column: span 1;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.form-row:last-child {
+  margin-bottom: 0;
+}
+
+.form-row .form-field:only-child {
+  grid-column: 1 / -1;
+}
+
+.day-section-editor {
+  margin-bottom: 20px;
+}
+
+.day-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--accent);
+}
+
+.day-header h3 {
+  margin: 0;
+  color: var(--text);
+  font-size: 1.2em;
+}
+
+.day-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.day-actions .icon-button {
+  background: transparent;
+  border: none;
+  color: var(--text);
+  cursor: pointer;
+  padding: 4px;
+  width: auto;
+  height: auto;
+  border-radius: 0;
+  transition: color 0.2s;
+}
+
+.day-actions .icon-button:hover:not(:disabled) {
+  background: transparent;
+  border: none;
+  color: var(--button-primary);
+}
+
+.day-actions .icon-button:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.day-actions .icon-button svg {
+  width: 18px;
+  height: 18px;
+}
+
+.exercises-list-editor {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.add-exercise-button {
+  background: var(--primary);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  color: var(--text);
+  cursor: pointer;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+  width: 100%;
+}
+
+.add-exercise-button:hover {
+  color: var(--button-primary);
+  border-color: var(--button-primary);
+}
+
+.add-exercise-button svg {
+  width: 20px;
+  height: 20px;
+}
+
+.exercise-editor {
+  background: var(--primary);
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+  display: grid;
+  grid-template-columns: 1fr 150px 80px 80px 100px 100px 40px;
+  gap: 10px;
+  align-items: center;
+}
+
+.input-with-info {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-with-info input {
+  width: 100%;
+  padding-right: 24px;
+}
+
+.info-icon-inline {
+  position: absolute;
+  right: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-secondary);
+  cursor: help;
+  pointer-events: auto;
+}
+
+.info-icon-inline:hover {
+  color: var(--button-primary);
+}
+
+.exercise-name-input {
+  font-weight: 600;
+}
+
+.exercise-type-input {
+  font-size: 0.9em;
+}
+
+.exercise-detail-input {
+  font-size: 0.9em;
+  text-align: center;
+}
+
+.exercise-editor input {
+  background: var(--secondary);
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-size: 0.95em;
+}
+
+.exercise-editor input:focus {
+  outline: none;
+  border-color: var(--button-primary);
+}
+
+.exercise-editor .icon-button {
+  margin: 0;
+  background: transparent;
+  border: none;
+  width: auto;
+  height: auto;
+  border-radius: 0;
+  padding: 4px;
+}
+
+.exercise-editor .icon-button:hover {
+  background: transparent;
+  border: none;
+}
+
+/* Help Section */
+.help-section {
+  background: var(--primary);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.help-toggle {
+  width: 100%;
+  text-align: left;
+  padding: 12px 16px;
+  background: transparent;
+  border: none;
+  color: var(--text);
+  font-size: 0.95em;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background 0.2s;
+}
+
+.help-toggle:hover {
+  background: var(--secondary);
+}
+
+.help-content {
+  padding: 0 16px 16px 16px;
+  border-top: 1px solid var(--border);
+}
+
+.help-item {
+  margin-top: 12px;
+  line-height: 1.6;
+  font-size: 0.9em;
+  color: var(--text);
+}
+
+.help-item:first-child {
+  margin-top: 16px;
+}
+
+.help-item strong {
+  color: var(--button-primary);
+}
+
+.help-item code {
+  background: var(--secondary);
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-family: 'Courier New', monospace;
+  font-size: 0.9em;
+  color: var(--accent);
+}
+
+.help-item ul {
+  margin: 8px 0 0 20px;
+  padding: 0;
+}
+
+.help-item li {
+  margin: 4px 0;
+}
+
+/* Help Modal */
+.help-modal {
+  max-width: 700px;
+}
+
+.help-modal-body {
+  padding: 25px;
+  overflow-y: auto;
+  flex: 1;
+}

@@ -1,0 +1,134 @@
+.exercise {
+  background: var(--primary);
+  padding: 12px;
+  border-radius: 8px;
+  position: relative;
+}
+
+.exercise-badge {
+  position: absolute;
+  top: -14px;
+  left: -14px;
+  width: 28px;
+  height: 28px;
+  background: var(--button-primary);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 0.9em;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.exercise .exercise-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--border);
+}
+
+.exercise-name {
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.exercise-rest {
+  font-size: 0.85em;
+  color: var(--text-secondary);
+}
+
+.sets-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85em;
+}
+
+.sets-table td {
+  padding: 4px 8px;
+  text-align: left;
+}
+
+.sets-table td:first-child {
+  color: var(--text-secondary);
+  font-size: 0.9em;
+  width: 50%;
+}
+
+.sets-table td:last-child {
+  text-align: right;
+  width: 50%;
+}
+
+.weight {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+/* Exercise Card (for ProgramView/Editor) */
+.exercise-card {
+  background: var(--primary);
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.exercise-card .exercise-header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+  width: 300px;
+  flex-shrink: 0;
+}
+
+.exercise-card .exercise-header h4 {
+  margin: 0;
+  font-size: 0.95em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.exercise-type {
+  font-size: 0.7em;
+  color: var(--text-secondary);
+  background: var(--secondary);
+  padding: 2px 6px;
+  border-radius: 8px;
+  white-space: nowrap;
+}
+
+.exercise-details {
+  display: grid;
+  grid-template-columns: 60px 60px 80px 70px;
+  gap: 12px;
+  align-items: center;
+}
+
+.exercise-detail {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+  white-space: nowrap;
+}
+
+.exercise-detail .label {
+  font-size: 0.7em;
+  color: var(--text-secondary);
+  font-weight: 600;
+}
+
+.exercise-detail .value {
+  font-size: 0.85em;
+  font-weight: 600;
+  color: var(--text);
+}

@@ -1,0 +1,52 @@
+/* Message Box */
+.message-box {
+  max-width: 450px;
+}
+
+.message-box-body {
+  padding: 30px;
+}
+
+.message-box-body p {
+  margin: 0;
+  line-height: 1.6;
+  font-size: 1em;
+  color: var(--text);
+  text-align: center;
+}
+
+.message-box-footer {
+  padding: 0 30px 30px 30px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.message-box-ok-button,
+.message-box-confirm-button {
+  background: var(--button-primary);
+  color: white !important;
+  border: 2px solid var(--button-primary);
+  padding: 10px 30px;
+  box-sizing: border-box;
+}
+
+.message-box-ok-button:hover,
+.message-box-confirm-button:hover {
+  background: var(--button-primary-hover);
+  border-color: var(--button-primary-hover);
+}
+
+.message-box-cancel-button {
+  background: transparent;
+  color: var(--text);
+  border: 2px solid var(--border);
+  padding: 10px 30px;
+  box-sizing: border-box;
+}
+
+.message-box-cancel-button:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: var(--text-secondary);
+  color: var(--text);
+}

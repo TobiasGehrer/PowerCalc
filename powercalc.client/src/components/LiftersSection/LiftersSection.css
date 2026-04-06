@@ -1,0 +1,23 @@
+/* Lifters Section */
+.lifters-section {
+  position: relative;
+}
+
+.lifters-add-button {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  border-color: var(--button-primary);
+  color: var(--button-primary);
+}
+
+.lifters-add-button:hover {
+  border-color: var(--button-primary-hover);
+  color: var(--button-primary-hover);
+}
+
+.lifters-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 15px;
+}

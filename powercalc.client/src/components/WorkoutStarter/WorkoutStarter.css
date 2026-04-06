@@ -1,0 +1,87 @@
+/* Workout Starter */
+.workout-start {
+  position: relative;
+}
+
+.workout-start .form-field {
+  margin-bottom: 0;
+  height: 164px;
+  display: flex;
+  flex-direction: column;
+}
+
+.lifter-chips {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  flex: 1;
+  align-content: start;
+  overflow-y: auto;
+}
+
+.lifter-chip {
+  padding: 10px 12px;
+  background: var(--primary);
+  border: 2px solid var(--border);
+  border-radius: 8px;
+  color: var(--text);
+  font-size: 0.9em;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-sizing: border-box;
+}
+
+.lifter-chip svg {
+  flex-shrink: 0;
+}
+
+.lifter-chip span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 700;
+}
+
+.lifter-chip:hover {
+  border-color: var(--button-primary);
+}
+
+.lifter-chip.selected {
+  background: var(--button-primary);
+  border-color: var(--button-primary);
+  color: white;
+}
+
+.lifter-chip.selected:hover {
+  background: var(--button-primary-hover);
+  border-color: var(--button-primary-hover);
+}
+
+.start-workout-icon-button {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  width: calc(36px * 3 + 8px * 2);
+  height: 36px;
+  padding: 0;
+  background: var(--button-primary);
+  color: white !important;
+  border-color: var(--button-primary);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.start-workout-icon-button:hover {
+  background: var(--button-primary-hover);
+  border-color: var(--button-primary-hover);
+}
+
+.start-workout-icon-button svg {
+  width: 20px;
+  height: 20px;
+}

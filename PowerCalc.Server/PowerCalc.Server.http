@@ -1,0 +1,6 @@
+@PowerCalc.Server_HostAddress = http://localhost:5171
+
+GET {{PowerCalc.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

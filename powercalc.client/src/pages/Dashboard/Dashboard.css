@@ -1,0 +1,40 @@
+.dashboard {
+  width: 100%;
+}
+
+.top-sections {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.top-sections section {
+  margin-bottom: 0;
+}
+
+.program-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  height: 164px;
+}
+
+.week-day-controls {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-field label {
+  font-size: 0.9em;
+  color: var(--text-secondary);
+  font-weight: 700;
+}

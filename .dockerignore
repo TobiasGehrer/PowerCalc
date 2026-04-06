@@ -1,0 +1,32 @@
+# Git
+.git/
+.gitignore
+.gitattributes
+
+# Visual Studio / VS Code
+.vs/
+.vscode/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+[Bb]in/
+[Oo]bj/
+publish/
+
+# Node
+node_modules/
+npm-debug.log
+package-lock.json
+
+# Frontend build output
+powercalc.client/dist/
+
+# Misc
+*.log
+.DS_Store
+Thumbs.db

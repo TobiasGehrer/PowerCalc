@@ -361,3 +361,12 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+# React build output (served from wwwroot)
+PowerCalc/wwwroot/assets/
+PowerCalc/wwwroot/index.html
+PowerCalc/wwwroot/vite.svg
+
+# React node_modules
+powercalc-client/node_modules/
+powercalc-client/dist/
