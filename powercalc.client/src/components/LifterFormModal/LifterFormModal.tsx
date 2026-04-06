@@ -72,12 +72,20 @@ export default function LifterFormModal({ lifter, onSave, onCancel }: LifterForm
       return;
     }
 
+    const parsedMaxes = Object.keys(oneRepMaxes).reduce((acc, key) => {
+      acc[key] = parseFloat(oneRepMaxes[key]) || 0;
+      return acc;
+    }, {} as Record<string, number>);
+
     const newLifter: Lifter = {
       name: name.trim(),
-      oneRepMaxes: Object.keys(oneRepMaxes).reduce((acc, key) => {
-        acc[key] = parseFloat(oneRepMaxes[key]) || 0;
-        return acc;
-      }, {} as Record<string, number>),
+      oneRepMaxes: {
+        squat: parsedMaxes['squat'] || 0,
+        bench: parsedMaxes['bench'] || 0,
+        deadlift: parsedMaxes['deadlift'] || 0,
+        ohp: parsedMaxes['ohp'] || 0,
+        ...parsedMaxes,
+      },
     };
 
     onSave(newLifter);

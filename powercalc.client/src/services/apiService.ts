@@ -1,13 +1,18 @@
 const API_BASE_URL = '/api';
 
 export class ApiError extends Error {
+    status: number;
+    endpoint?: string;
+
     constructor(
-        public status: number,
+        status: number,
         message: string,
-        public endpoint?: string
+        endpoint?: string
     ) {
         super(message);
         this.name = 'ApiError';
+        this.status = status;
+        this.endpoint = endpoint;
     }
 }
 
