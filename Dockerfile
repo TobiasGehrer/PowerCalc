@@ -1,50 +1,37 @@
-# Stage 1: Build the React frontend
-FROM node:20-alpine AS frontend-build
-WORKDIR /app/client
+# See https://aka.ms/customizecontainer to learn how to customize your debug container and how Visual Studio uses this Dockerfile to build your images for faster debugging.
 
-# Copy package files and install dependencies
-COPY powercalc.client/package*.json ./
-RUN npm ci
-
-# Copy frontend source and build
-COPY powercalc.client/ ./
-RUN npm run build
-
-# Stage 2: Build the .NET backend
-FROM mcr.microsoft.com/dotnet/sdk:8.0 AS backend-build
+# This stage is used when running from VS in fast mode (Default for Debug configuration)
+FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
+USER $APP_UID
 WORKDIR /app
-
-# Copy solution and project files
-COPY PowerCalc.sln ./
-COPY PowerCalc.Server/PowerCalc.Server.csproj ./PowerCalc.Server/
-COPY powercalc.client/powercalc.client.esproj ./powercalc.client/
-
-# Restore dependencies
-RUN dotnet restore
-
-# Copy the rest of the backend source
-COPY PowerCalc.Server/ ./PowerCalc.Server/
-
-# Build the backend
-RUN dotnet publish PowerCalc.Server/PowerCalc.Server.csproj -c Release -o /app/publish
-
-# Stage 3: Runtime image
-FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS runtime
-WORKDIR /app
-
-# Copy built backend from build stage
-COPY --from=backend-build /app/publish .
-
-# Copy built frontend from frontend-build stage
-COPY --from=frontend-build /app/client/dist ./wwwroot
-
-# Expose port
 EXPOSE 8080
-EXPOSE 8081
 
-# Set environment variables
-ENV ASPNETCORE_URLS=http://+:8080
-ENV ASPNETCORE_ENVIRONMENT=Production
 
-# Run the application
+# This stage is used to build the service project
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS with-node
+RUN apt-get update
+RUN apt-get -y install curl
+RUN curl -sL https://deb.nodesource.com/setup_20.x | bash
+RUN apt-get -y install nodejs
+
+
+FROM with-node AS build
+ARG BUILD_CONFIGURATION=Release
+WORKDIR /src
+COPY ["PowerCalc.Server/PowerCalc.Server.csproj", "PowerCalc.Server/"]
+COPY ["powercalc.client/powercalc.client.esproj", "powercalc.client/"]
+RUN dotnet restore "./PowerCalc.Server/PowerCalc.Server.csproj"
+COPY . .
+WORKDIR "/src/PowerCalc.Server"
+RUN dotnet build "./PowerCalc.Server.csproj" -c $BUILD_CONFIGURATION -o /app/build
+
+# This stage is used to publish the service project to be copied to the final stage
+FROM build AS publish
+ARG BUILD_CONFIGURATION=Release
+RUN dotnet publish "./PowerCalc.Server.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
+
+# This stage is used in production or when running from VS in regular mode (Default when not using the Debug configuration)
+FROM base AS final
+WORKDIR /app
+COPY --from=publish /app/publish .
 ENTRYPOINT ["dotnet", "PowerCalc.Server.dll"]
