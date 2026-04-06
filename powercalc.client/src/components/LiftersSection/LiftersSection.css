@@ -21,3 +21,32 @@
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 15px;
 }
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .lifters-add-button {
+    top: 20px;
+    right: 20px;
+    min-width: 44px;
+    min-height: 44px;
+    padding: 10px 20px;
+  }
+
+  .lifters-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .lifters-add-button {
+    top: 15px;
+    right: 15px;
+    padding: 8px 16px;
+    font-size: 0.9em;
+  }
+
+  .lifters-grid {
+    gap: 10px;
+  }
+}

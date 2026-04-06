@@ -41,6 +41,7 @@
   justify-content: center;
   cursor: pointer;
   transition: all 0.2s;
+  min-width: 44px; /* Touch-friendly minimum */
 }
 
 .finish-workout-button:hover {
@@ -95,4 +96,100 @@
 
 .workout-content[data-participants='2'] .lifter-exercises {
   grid-template-columns: 1fr 1fr;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 1024px) {
+  /* Tablet: 2 columns max */
+  .workout-content[data-participants='3'] {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .workout-content[data-participants='1'] .lifter-exercises {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Mobile: Stack everything vertically */
+  .workout-title-section {
+    grid-template-columns: auto 1fr auto;
+    gap: 12px;
+    padding-bottom: 15px;
+  }
+
+  .workout-title-section h1 {
+    font-size: 1.5em;
+  }
+
+  .workout-subtitle {
+    font-size: 1em;
+  }
+
+  .finish-workout-button {
+    width: 44px;
+    height: 44px; /* Larger touch target */
+  }
+
+  .finish-workout-button svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .workout-content {
+    margin-top: 20px;
+    gap: 20px;
+  }
+
+  /* All participants stack vertically on mobile */
+  .workout-content[data-participants='1'],
+  .workout-content[data-participants='2'],
+  .workout-content[data-participants='3'] {
+    grid-template-columns: 1fr;
+  }
+
+  .lifter-workout {
+    padding: 20px;
+  }
+
+  .lifter-workout h2 {
+    font-size: 1.3em;
+  }
+
+  /* Stack exercises vertically on mobile */
+  .workout-content[data-participants='1'] .lifter-exercises,
+  .workout-content[data-participants='2'] .lifter-exercises,
+  .workout-content[data-participants='3'] .lifter-exercises {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Extra small mobile devices */
+  .workout-title-section {
+    padding-bottom: 12px;
+  }
+
+  .workout-title-section h1 {
+    font-size: 1.3em;
+  }
+
+  .workout-subtitle {
+    font-size: 0.9em;
+  }
+
+  .workout-content {
+    margin-top: 15px;
+    gap: 15px;
+  }
+
+  .lifter-workout {
+    padding: 15px;
+  }
+
+  .lifter-workout h2 {
+    font-size: 1.2em;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+  }
 }

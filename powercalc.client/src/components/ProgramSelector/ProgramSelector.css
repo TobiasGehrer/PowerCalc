@@ -10,3 +10,31 @@
   display: flex;
   gap: 8px;
 }
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .program-action-buttons {
+    top: 20px;
+    right: 20px;
+  }
+
+  .program-action-buttons button {
+    min-width: 44px;
+    min-height: 44px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .program-action-buttons {
+    top: 15px;
+    right: 15px;
+    gap: 6px;
+  }
+
+  .program-action-buttons button {
+    min-width: 40px;
+    min-height: 40px;
+    padding: 8px;
+  }
+}

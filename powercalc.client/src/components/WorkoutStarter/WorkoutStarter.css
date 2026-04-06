@@ -85,3 +85,64 @@
   width: 20px;
   height: 20px;
 }
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .workout-start .form-field {
+    height: auto;
+    min-height: 200px;
+  }
+
+  .lifter-chips {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .lifter-chip {
+    padding: 12px;
+    font-size: 0.95em;
+    min-height: 44px; /* Touch-friendly */
+  }
+
+  .start-workout-icon-button {
+    top: 20px;
+    right: 20px;
+    width: 44px;
+    height: 44px;
+    min-width: 44px;
+  }
+
+  .start-workout-icon-button svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .workout-start .form-field {
+    min-height: 180px;
+  }
+
+  .lifter-chips {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .lifter-chip {
+    padding: 10px 12px;
+    font-size: 0.9em;
+  }
+
+  .start-workout-icon-button {
+    top: 15px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+  }
+
+  .start-workout-icon-button svg {
+    width: 22px;
+    height: 22px;
+  }
+}

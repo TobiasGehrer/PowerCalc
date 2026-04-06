@@ -69,6 +69,68 @@
   font-weight: 600;
 }
 
+/* Mobile Responsive Styles for Exercise Card */
+@media (max-width: 768px) {
+  .exercise {
+    padding: 16px;
+  }
+
+  .exercise-badge {
+    top: -12px;
+    left: -12px;
+    width: 32px;
+    height: 32px;
+    font-size: 1em;
+  }
+
+  .exercise .exercise-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    margin-bottom: 10px;
+  }
+
+  .exercise-name {
+    font-size: 1.1em;
+  }
+
+  .exercise-rest {
+    font-size: 0.9em;
+  }
+
+  .sets-table {
+    font-size: 0.95em;
+  }
+
+  .sets-table td {
+    padding: 6px 8px;
+  }
+
+  .sets-table td:first-child {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .exercise {
+    padding: 14px;
+  }
+
+  .exercise-badge {
+    width: 28px;
+    height: 28px;
+    font-size: 0.95em;
+  }
+
+  .exercise-name {
+    font-size: 1em;
+  }
+
+  .sets-table {
+    font-size: 0.9em;
+  }
+}
+
 /* Exercise Card (for ProgramView/Editor) */
 .exercise-card {
   background: var(--primary);
