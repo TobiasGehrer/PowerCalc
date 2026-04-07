@@ -1584,7 +1584,7 @@
       ]
     },
     {
-      "name": "Hypertrophy 12-Week",
+      "name": "12-Week Hypertrophy",
       "weeks": 12,
       "days": 3,
       "workouts": [
@@ -1596,31 +1596,31 @@
               "name": "Squat",
               "sets": "3",
               "reps": "10",
-              "intensity": "62",
-              "restSeconds": 180,
+              "intensity": "60",
+              "restSeconds": 150,
               "liftType": "squat"
             },
             {
               "name": "Bench Press",
               "sets": "3",
               "reps": "10",
-              "intensity": "62",
-              "restSeconds": 180,
+              "intensity": "60",
+              "restSeconds": 150,
               "liftType": "bench"
             },
             {
               "name": "Barbell Row",
               "sets": "3",
               "reps": "10",
-              "intensity": "62",
+              "intensity": "60",
               "restSeconds": 90,
               "liftType": "row"
             },
             {
               "name": "Incline DB Press",
               "sets": "3",
-              "reps": "10",
-              "intensity": "60",
+              "reps": "12",
+              "intensity": "55",
               "restSeconds": 90,
               "liftType": "inclineBench"
             },
@@ -1686,9 +1686,9 @@
           "exercises": [
             {
               "name": "Bench Press",
-              "sets": "4",
+              "sets": "3",
               "reps": "10",
-              "intensity": "60",
+              "intensity": "58",
               "restSeconds": 150,
               "liftType": "bench"
             },
@@ -1696,21 +1696,21 @@
               "name": "Squat",
               "sets": "3",
               "reps": "10",
-              "intensity": "60",
+              "intensity": "58",
               "restSeconds": 150,
               "liftType": "squat"
             },
             {
               "name": "DB Row",
               "sets": "3",
-              "reps": "10",
-              "intensity": "65",
+              "reps": "12",
+              "intensity": "60",
               "restSeconds": 90,
               "liftType": "row"
             },
             {
               "name": "Lateral Raises",
-              "sets": "4",
+              "sets": "3",
               "reps": "15",
               "intensity": "50",
               "restSeconds": 60,
@@ -1734,31 +1734,31 @@
               "name": "Squat",
               "sets": "3",
               "reps": "10",
-              "intensity": "65",
-              "restSeconds": 180,
+              "intensity": "61",
+              "restSeconds": 150,
               "liftType": "squat"
             },
             {
               "name": "Bench Press",
               "sets": "3",
               "reps": "10",
-              "intensity": "65",
-              "restSeconds": 180,
+              "intensity": "61",
+              "restSeconds": 150,
               "liftType": "bench"
             },
             {
               "name": "Barbell Row",
               "sets": "3",
               "reps": "10",
-              "intensity": "65",
+              "intensity": "61",
               "restSeconds": 90,
               "liftType": "row"
             },
             {
               "name": "Incline DB Press",
               "sets": "3",
-              "reps": "10",
-              "intensity": "62",
+              "reps": "12",
+              "intensity": "56",
               "restSeconds": 90,
               "liftType": "inclineBench"
             },
@@ -1766,7 +1766,7 @@
               "name": "EZ-Bar Curls",
               "sets": "3",
               "reps": "12",
-              "intensity": "62",
+              "intensity": "61",
               "restSeconds": 60,
               "liftType": "curl"
             }
@@ -1780,7 +1780,7 @@
               "name": "Deadlift",
               "sets": "3",
               "reps": "8",
-              "intensity": "67",
+              "intensity": "66",
               "restSeconds": 180,
               "liftType": "deadlift"
             },
@@ -1788,7 +1788,7 @@
               "name": "Overhead Press",
               "sets": "3",
               "reps": "10",
-              "intensity": "62",
+              "intensity": "61",
               "restSeconds": 120,
               "liftType": "ohp"
             },
@@ -1796,7 +1796,7 @@
               "name": "Lat Pulldown",
               "sets": "3",
               "reps": "10",
-              "intensity": "67",
+              "intensity": "66",
               "restSeconds": 90,
               "liftType": "latPulldown"
             },
@@ -1804,7 +1804,7 @@
               "name": "Romanian Deadlift",
               "sets": "3",
               "reps": "10",
-              "intensity": "57",
+              "intensity": "56",
               "restSeconds": 120,
               "liftType": "rdl"
             },
@@ -1812,7 +1812,7 @@
               "name": "Triceps Pushdown",
               "sets": "3",
               "reps": "12",
-              "intensity": "62",
+              "intensity": "61",
               "restSeconds": 60,
               "liftType": "triceps"
             }
@@ -1824,9 +1824,9 @@
           "exercises": [
             {
               "name": "Bench Press",
-              "sets": "4",
+              "sets": "3",
               "reps": "10",
-              "intensity": "62",
+              "intensity": "59",
               "restSeconds": 150,
               "liftType": "bench"
             },
@@ -1834,23 +1834,23 @@
               "name": "Squat",
               "sets": "3",
               "reps": "10",
-              "intensity": "62",
+              "intensity": "59",
               "restSeconds": 150,
               "liftType": "squat"
             },
             {
               "name": "DB Row",
               "sets": "3",
-              "reps": "10",
-              "intensity": "67",
+              "reps": "12",
+              "intensity": "61",
               "restSeconds": 90,
               "liftType": "row"
             },
             {
               "name": "Lateral Raises",
-              "sets": "4",
+              "sets": "3",
               "reps": "15",
-              "intensity": "52",
+              "intensity": "51",
               "restSeconds": 60,
               "liftType": "lateralRaise"
             },
@@ -1858,7 +1858,7 @@
               "name": "Face Pulls",
               "sets": "3",
               "reps": "15",
-              "intensity": "52",
+              "intensity": "51",
               "restSeconds": 60,
               "liftType": "facePull"
             }
@@ -1872,31 +1872,169 @@
               "name": "Squat",
               "sets": "3",
               "reps": "10",
-              "intensity": "67",
-              "restSeconds": 180,
+              "intensity": "63",
+              "restSeconds": 150,
               "liftType": "squat"
             },
             {
               "name": "Bench Press",
               "sets": "3",
               "reps": "10",
-              "intensity": "67",
-              "restSeconds": 180,
+              "intensity": "63",
+              "restSeconds": 150,
               "liftType": "bench"
             },
             {
               "name": "Barbell Row",
               "sets": "3",
               "reps": "10",
-              "intensity": "67",
+              "intensity": "63",
               "restSeconds": 90,
               "liftType": "row"
             },
             {
               "name": "Incline DB Press",
               "sets": "3",
+              "reps": "12",
+              "intensity": "58",
+              "restSeconds": 90,
+              "liftType": "inclineBench"
+            },
+            {
+              "name": "EZ-Bar Curls",
+              "sets": "3",
+              "reps": "12",
+              "intensity": "63",
+              "restSeconds": 60,
+              "liftType": "curl"
+            }
+          ]
+        },
+        {
+          "week": 3,
+          "day": 2,
+          "exercises": [
+            {
+              "name": "Deadlift",
+              "sets": "3",
+              "reps": "8",
+              "intensity": "68",
+              "restSeconds": 180,
+              "liftType": "deadlift"
+            },
+            {
+              "name": "Overhead Press",
+              "sets": "3",
+              "reps": "10",
+              "intensity": "63",
+              "restSeconds": 120,
+              "liftType": "ohp"
+            },
+            {
+              "name": "Lat Pulldown",
+              "sets": "3",
+              "reps": "10",
+              "intensity": "68",
+              "restSeconds": 90,
+              "liftType": "latPulldown"
+            },
+            {
+              "name": "Romanian Deadlift",
+              "sets": "3",
+              "reps": "10",
+              "intensity": "58",
+              "restSeconds": 120,
+              "liftType": "rdl"
+            },
+            {
+              "name": "Triceps Pushdown",
+              "sets": "3",
+              "reps": "12",
+              "intensity": "63",
+              "restSeconds": 60,
+              "liftType": "triceps"
+            }
+          ]
+        },
+        {
+          "week": 3,
+          "day": 3,
+          "exercises": [
+            {
+              "name": "Bench Press",
+              "sets": "3",
+              "reps": "10",
+              "intensity": "60",
+              "restSeconds": 150,
+              "liftType": "bench"
+            },
+            {
+              "name": "Squat",
+              "sets": "3",
+              "reps": "10",
+              "intensity": "60",
+              "restSeconds": 150,
+              "liftType": "squat"
+            },
+            {
+              "name": "DB Row",
+              "sets": "3",
+              "reps": "12",
+              "intensity": "63",
+              "restSeconds": 90,
+              "liftType": "row"
+            },
+            {
+              "name": "Lateral Raises",
+              "sets": "3",
+              "reps": "15",
+              "intensity": "53",
+              "restSeconds": 60,
+              "liftType": "lateralRaise"
+            },
+            {
+              "name": "Face Pulls",
+              "sets": "3",
+              "reps": "15",
+              "intensity": "53",
+              "restSeconds": 60,
+              "liftType": "facePull"
+            }
+          ]
+        },
+        {
+          "week": 4,
+          "day": 1,
+          "exercises": [
+            {
+              "name": "Squat",
+              "sets": "3",
               "reps": "10",
               "intensity": "65",
+              "restSeconds": 150,
+              "liftType": "squat"
+            },
+            {
+              "name": "Bench Press",
+              "sets": "3",
+              "reps": "10",
+              "intensity": "65",
+              "restSeconds": 150,
+              "liftType": "bench"
+            },
+            {
+              "name": "Barbell Row",
+              "sets": "3",
+              "reps": "10",
+              "intensity": "65",
+              "restSeconds": 90,
+              "liftType": "row"
+            },
+            {
+              "name": "Incline DB Press",
+              "sets": "3",
+              "reps": "12",
+              "intensity": "60",
               "restSeconds": 90,
               "liftType": "inclineBench"
             },
@@ -1911,7 +2049,7 @@
           ]
         },
         {
-          "week": 3,
+          "week": 4,
           "day": 2,
           "exercises": [
             {
@@ -1957,14 +2095,14 @@
           ]
         },
         {
-          "week": 3,
+          "week": 4,
           "day": 3,
           "exercises": [
             {
               "name": "Bench Press",
-              "sets": "4",
+              "sets": "3",
               "reps": "10",
-              "intensity": "65",
+              "intensity": "62",
               "restSeconds": 150,
               "liftType": "bench"
             },
@@ -1972,21 +2110,21 @@
               "name": "Squat",
               "sets": "3",
               "reps": "10",
-              "intensity": "65",
+              "intensity": "62",
               "restSeconds": 150,
               "liftType": "squat"
             },
             {
               "name": "DB Row",
               "sets": "3",
-              "reps": "10",
-              "intensity": "70",
+              "reps": "12",
+              "intensity": "65",
               "restSeconds": 90,
               "liftType": "row"
             },
             {
               "name": "Lateral Raises",
-              "sets": "4",
+              "sets": "3",
               "reps": "15",
               "intensity": "55",
               "restSeconds": 60,
@@ -2003,176 +2141,38 @@
           ]
         },
         {
-          "week": 4,
-          "day": 1,
-          "exercises": [
-            {
-              "name": "Squat",
-              "sets": "3",
-              "reps": "10",
-              "intensity": "70",
-              "restSeconds": 180,
-              "liftType": "squat"
-            },
-            {
-              "name": "Bench Press",
-              "sets": "3",
-              "reps": "10",
-              "intensity": "70",
-              "restSeconds": 180,
-              "liftType": "bench"
-            },
-            {
-              "name": "Barbell Row",
-              "sets": "3",
-              "reps": "10",
-              "intensity": "70",
-              "restSeconds": 90,
-              "liftType": "row"
-            },
-            {
-              "name": "Incline DB Press",
-              "sets": "3",
-              "reps": "10",
-              "intensity": "67",
-              "restSeconds": 90,
-              "liftType": "inclineBench"
-            },
-            {
-              "name": "EZ-Bar Curls",
-              "sets": "3",
-              "reps": "12",
-              "intensity": "67",
-              "restSeconds": 60,
-              "liftType": "curl"
-            }
-          ]
-        },
-        {
-          "week": 4,
-          "day": 2,
-          "exercises": [
-            {
-              "name": "Deadlift",
-              "sets": "3",
-              "reps": "8",
-              "intensity": "72",
-              "restSeconds": 180,
-              "liftType": "deadlift"
-            },
-            {
-              "name": "Overhead Press",
-              "sets": "3",
-              "reps": "10",
-              "intensity": "67",
-              "restSeconds": 120,
-              "liftType": "ohp"
-            },
-            {
-              "name": "Lat Pulldown",
-              "sets": "3",
-              "reps": "10",
-              "intensity": "72",
-              "restSeconds": 90,
-              "liftType": "latPulldown"
-            },
-            {
-              "name": "Romanian Deadlift",
-              "sets": "3",
-              "reps": "10",
-              "intensity": "62",
-              "restSeconds": 120,
-              "liftType": "rdl"
-            },
-            {
-              "name": "Triceps Pushdown",
-              "sets": "3",
-              "reps": "12",
-              "intensity": "67",
-              "restSeconds": 60,
-              "liftType": "triceps"
-            }
-          ]
-        },
-        {
-          "week": 4,
-          "day": 3,
-          "exercises": [
-            {
-              "name": "Bench Press",
-              "sets": "4",
-              "reps": "10",
-              "intensity": "67",
-              "restSeconds": 150,
-              "liftType": "bench"
-            },
-            {
-              "name": "Squat",
-              "sets": "3",
-              "reps": "10",
-              "intensity": "67",
-              "restSeconds": 150,
-              "liftType": "squat"
-            },
-            {
-              "name": "DB Row",
-              "sets": "3",
-              "reps": "10",
-              "intensity": "72",
-              "restSeconds": 90,
-              "liftType": "row"
-            },
-            {
-              "name": "Lateral Raises",
-              "sets": "4",
-              "reps": "15",
-              "intensity": "57",
-              "restSeconds": 60,
-              "liftType": "lateralRaise"
-            },
-            {
-              "name": "Face Pulls",
-              "sets": "3",
-              "reps": "15",
-              "intensity": "57",
-              "restSeconds": 60,
-              "liftType": "facePull"
-            }
-          ]
-        },
-        {
           "week": 5,
           "day": 1,
           "exercises": [
             {
               "name": "Squat",
-              "sets": "4",
+              "sets": "3",
               "reps": "8",
-              "intensity": "72",
-              "restSeconds": 180,
+              "intensity": "68",
+              "restSeconds": 150,
               "liftType": "squat"
             },
             {
               "name": "Bench Press",
-              "sets": "4",
+              "sets": "3",
               "reps": "8",
-              "intensity": "72",
-              "restSeconds": 180,
+              "intensity": "68",
+              "restSeconds": 150,
               "liftType": "bench"
             },
             {
               "name": "Barbell Row",
-              "sets": "4",
+              "sets": "3",
               "reps": "8",
-              "intensity": "72",
+              "intensity": "68",
               "restSeconds": 90,
               "liftType": "row"
             },
             {
               "name": "Incline DB Press",
               "sets": "3",
-              "reps": "8",
-              "intensity": "70",
+              "reps": "10",
+              "intensity": "63",
               "restSeconds": 90,
               "liftType": "inclineBench"
             },
@@ -2180,7 +2180,7 @@
               "name": "EZ-Bar Curls",
               "sets": "3",
               "reps": "10",
-              "intensity": "70",
+              "intensity": "68",
               "restSeconds": 60,
               "liftType": "curl"
             }
@@ -2194,23 +2194,23 @@
               "name": "Deadlift",
               "sets": "3",
               "reps": "6",
-              "intensity": "75",
+              "intensity": "73",
               "restSeconds": 180,
               "liftType": "deadlift"
             },
             {
               "name": "Overhead Press",
-              "sets": "4",
+              "sets": "3",
               "reps": "8",
-              "intensity": "70",
+              "intensity": "68",
               "restSeconds": 120,
               "liftType": "ohp"
             },
             {
               "name": "Lat Pulldown",
-              "sets": "4",
+              "sets": "3",
               "reps": "8",
-              "intensity": "75",
+              "intensity": "73",
               "restSeconds": 90,
               "liftType": "latPulldown"
             },
@@ -2218,7 +2218,7 @@
               "name": "Romanian Deadlift",
               "sets": "3",
               "reps": "8",
-              "intensity": "65",
+              "intensity": "63",
               "restSeconds": 120,
               "liftType": "rdl"
             },
@@ -2226,7 +2226,7 @@
               "name": "Triceps Pushdown",
               "sets": "3",
               "reps": "10",
-              "intensity": "70",
+              "intensity": "68",
               "restSeconds": 60,
               "liftType": "triceps"
             }
@@ -2238,317 +2238,317 @@
           "exercises": [
             {
               "name": "Bench Press",
-              "sets": "4",
-              "reps": "8",
-              "intensity": "70",
-              "restSeconds": 150,
-              "liftType": "bench"
-            },
-            {
-              "name": "Squat",
               "sets": "3",
               "reps": "8",
-              "intensity": "70",
-              "restSeconds": 150,
-              "liftType": "squat"
-            },
-            {
-              "name": "DB Row",
-              "sets": "3",
-              "reps": "8",
-              "intensity": "75",
-              "restSeconds": 90,
-              "liftType": "row"
-            },
-            {
-              "name": "Lateral Raises",
-              "sets": "4",
-              "reps": "12",
-              "intensity": "60",
-              "restSeconds": 60,
-              "liftType": "lateralRaise"
-            },
-            {
-              "name": "Face Pulls",
-              "sets": "3",
-              "reps": "12",
-              "intensity": "60",
-              "restSeconds": 60,
-              "liftType": "facePull"
-            }
-          ]
-        },
-        {
-          "week": 6,
-          "day": 1,
-          "exercises": [
-            {
-              "name": "Squat",
-              "sets": "4",
-              "reps": "8",
-              "intensity": "75",
-              "restSeconds": 180,
-              "liftType": "squat"
-            },
-            {
-              "name": "Bench Press",
-              "sets": "4",
-              "reps": "8",
-              "intensity": "75",
-              "restSeconds": 180,
-              "liftType": "bench"
-            },
-            {
-              "name": "Barbell Row",
-              "sets": "4",
-              "reps": "8",
-              "intensity": "75",
-              "restSeconds": 90,
-              "liftType": "row"
-            },
-            {
-              "name": "Incline DB Press",
-              "sets": "3",
-              "reps": "8",
-              "intensity": "72",
-              "restSeconds": 90,
-              "liftType": "inclineBench"
-            },
-            {
-              "name": "EZ-Bar Curls",
-              "sets": "3",
-              "reps": "10",
-              "intensity": "72",
-              "restSeconds": 60,
-              "liftType": "curl"
-            }
-          ]
-        },
-        {
-          "week": 6,
-          "day": 2,
-          "exercises": [
-            {
-              "name": "Deadlift",
-              "sets": "3",
-              "reps": "6",
-              "intensity": "77",
-              "restSeconds": 180,
-              "liftType": "deadlift"
-            },
-            {
-              "name": "Overhead Press",
-              "sets": "4",
-              "reps": "8",
-              "intensity": "72",
-              "restSeconds": 120,
-              "liftType": "ohp"
-            },
-            {
-              "name": "Lat Pulldown",
-              "sets": "4",
-              "reps": "8",
-              "intensity": "77",
-              "restSeconds": 90,
-              "liftType": "latPulldown"
-            },
-            {
-              "name": "Romanian Deadlift",
-              "sets": "3",
-              "reps": "8",
-              "intensity": "67",
-              "restSeconds": 120,
-              "liftType": "rdl"
-            },
-            {
-              "name": "Triceps Pushdown",
-              "sets": "3",
-              "reps": "10",
-              "intensity": "72",
-              "restSeconds": 60,
-              "liftType": "triceps"
-            }
-          ]
-        },
-        {
-          "week": 6,
-          "day": 3,
-          "exercises": [
-            {
-              "name": "Bench Press",
-              "sets": "4",
-              "reps": "8",
-              "intensity": "72",
-              "restSeconds": 150,
-              "liftType": "bench"
-            },
-            {
-              "name": "Squat",
-              "sets": "3",
-              "reps": "8",
-              "intensity": "72",
-              "restSeconds": 150,
-              "liftType": "squat"
-            },
-            {
-              "name": "DB Row",
-              "sets": "3",
-              "reps": "8",
-              "intensity": "77",
-              "restSeconds": 90,
-              "liftType": "row"
-            },
-            {
-              "name": "Lateral Raises",
-              "sets": "4",
-              "reps": "12",
-              "intensity": "62",
-              "restSeconds": 60,
-              "liftType": "lateralRaise"
-            },
-            {
-              "name": "Face Pulls",
-              "sets": "3",
-              "reps": "12",
-              "intensity": "62",
-              "restSeconds": 60,
-              "liftType": "facePull"
-            }
-          ]
-        },
-        {
-          "week": 7,
-          "day": 1,
-          "exercises": [
-            {
-              "name": "Squat",
-              "sets": "4",
-              "reps": "8",
-              "intensity": "77",
-              "restSeconds": 180,
-              "liftType": "squat"
-            },
-            {
-              "name": "Bench Press",
-              "sets": "4",
-              "reps": "8",
-              "intensity": "77",
-              "restSeconds": 180,
-              "liftType": "bench"
-            },
-            {
-              "name": "Barbell Row",
-              "sets": "4",
-              "reps": "8",
-              "intensity": "77",
-              "restSeconds": 90,
-              "liftType": "row"
-            },
-            {
-              "name": "Incline DB Press",
-              "sets": "3",
-              "reps": "8",
-              "intensity": "75",
-              "restSeconds": 90,
-              "liftType": "inclineBench"
-            },
-            {
-              "name": "EZ-Bar Curls",
-              "sets": "3",
-              "reps": "10",
-              "intensity": "75",
-              "restSeconds": 60,
-              "liftType": "curl"
-            }
-          ]
-        },
-        {
-          "week": 7,
-          "day": 2,
-          "exercises": [
-            {
-              "name": "Deadlift",
-              "sets": "3",
-              "reps": "6",
-              "intensity": "80",
-              "restSeconds": 180,
-              "liftType": "deadlift"
-            },
-            {
-              "name": "Overhead Press",
-              "sets": "4",
-              "reps": "8",
-              "intensity": "75",
-              "restSeconds": 120,
-              "liftType": "ohp"
-            },
-            {
-              "name": "Lat Pulldown",
-              "sets": "4",
-              "reps": "8",
-              "intensity": "80",
-              "restSeconds": 90,
-              "liftType": "latPulldown"
-            },
-            {
-              "name": "Romanian Deadlift",
-              "sets": "3",
-              "reps": "8",
-              "intensity": "70",
-              "restSeconds": 120,
-              "liftType": "rdl"
-            },
-            {
-              "name": "Triceps Pushdown",
-              "sets": "3",
-              "reps": "10",
-              "intensity": "75",
-              "restSeconds": 60,
-              "liftType": "triceps"
-            }
-          ]
-        },
-        {
-          "week": 7,
-          "day": 3,
-          "exercises": [
-            {
-              "name": "Bench Press",
-              "sets": "4",
-              "reps": "8",
-              "intensity": "75",
-              "restSeconds": 150,
-              "liftType": "bench"
-            },
-            {
-              "name": "Squat",
-              "sets": "3",
-              "reps": "8",
-              "intensity": "75",
-              "restSeconds": 150,
-              "liftType": "squat"
-            },
-            {
-              "name": "DB Row",
-              "sets": "3",
-              "reps": "8",
-              "intensity": "80",
-              "restSeconds": 90,
-              "liftType": "row"
-            },
-            {
-              "name": "Lateral Raises",
-              "sets": "4",
-              "reps": "12",
               "intensity": "65",
-              "restSeconds": 60,
-              "liftType": "lateralRaise"
+              "restSeconds": 150,
+              "liftType": "bench"
             },
             {
-              "name": "Face Pulls",
+              "name": "Squat",
               "sets": "3",
-              "reps": "12",
+              "reps": "8",
               "intensity": "65",
+              "restSeconds": 150,
+              "liftType": "squat"
+            },
+            {
+              "name": "DB Row",
+              "sets": "3",
+              "reps": "10",
+              "intensity": "68",
+              "restSeconds": 90,
+              "liftType": "row"
+            },
+            {
+              "name": "Lateral Raises",
+              "sets": "3",
+              "reps": "12",
+              "intensity": "58",
+              "restSeconds": 60,
+              "liftType": "lateralRaise"
+            },
+            {
+              "name": "Face Pulls",
+              "sets": "3",
+              "reps": "12",
+              "intensity": "58",
+              "restSeconds": 60,
+              "liftType": "facePull"
+            }
+          ]
+        },
+        {
+          "week": 6,
+          "day": 1,
+          "exercises": [
+            {
+              "name": "Squat",
+              "sets": "3",
+              "reps": "8",
+              "intensity": "69",
+              "restSeconds": 150,
+              "liftType": "squat"
+            },
+            {
+              "name": "Bench Press",
+              "sets": "3",
+              "reps": "8",
+              "intensity": "69",
+              "restSeconds": 150,
+              "liftType": "bench"
+            },
+            {
+              "name": "Barbell Row",
+              "sets": "3",
+              "reps": "8",
+              "intensity": "69",
+              "restSeconds": 90,
+              "liftType": "row"
+            },
+            {
+              "name": "Incline DB Press",
+              "sets": "3",
+              "reps": "10",
+              "intensity": "64",
+              "restSeconds": 90,
+              "liftType": "inclineBench"
+            },
+            {
+              "name": "EZ-Bar Curls",
+              "sets": "3",
+              "reps": "10",
+              "intensity": "69",
+              "restSeconds": 60,
+              "liftType": "curl"
+            }
+          ]
+        },
+        {
+          "week": 6,
+          "day": 2,
+          "exercises": [
+            {
+              "name": "Deadlift",
+              "sets": "3",
+              "reps": "6",
+              "intensity": "74",
+              "restSeconds": 180,
+              "liftType": "deadlift"
+            },
+            {
+              "name": "Overhead Press",
+              "sets": "3",
+              "reps": "8",
+              "intensity": "69",
+              "restSeconds": 120,
+              "liftType": "ohp"
+            },
+            {
+              "name": "Lat Pulldown",
+              "sets": "3",
+              "reps": "8",
+              "intensity": "74",
+              "restSeconds": 90,
+              "liftType": "latPulldown"
+            },
+            {
+              "name": "Romanian Deadlift",
+              "sets": "3",
+              "reps": "8",
+              "intensity": "64",
+              "restSeconds": 120,
+              "liftType": "rdl"
+            },
+            {
+              "name": "Triceps Pushdown",
+              "sets": "3",
+              "reps": "10",
+              "intensity": "69",
+              "restSeconds": 60,
+              "liftType": "triceps"
+            }
+          ]
+        },
+        {
+          "week": 6,
+          "day": 3,
+          "exercises": [
+            {
+              "name": "Bench Press",
+              "sets": "3",
+              "reps": "8",
+              "intensity": "67",
+              "restSeconds": 150,
+              "liftType": "bench"
+            },
+            {
+              "name": "Squat",
+              "sets": "3",
+              "reps": "8",
+              "intensity": "67",
+              "restSeconds": 150,
+              "liftType": "squat"
+            },
+            {
+              "name": "DB Row",
+              "sets": "3",
+              "reps": "10",
+              "intensity": "69",
+              "restSeconds": 90,
+              "liftType": "row"
+            },
+            {
+              "name": "Lateral Raises",
+              "sets": "3",
+              "reps": "12",
+              "intensity": "59",
+              "restSeconds": 60,
+              "liftType": "lateralRaise"
+            },
+            {
+              "name": "Face Pulls",
+              "sets": "3",
+              "reps": "12",
+              "intensity": "59",
+              "restSeconds": 60,
+              "liftType": "facePull"
+            }
+          ]
+        },
+        {
+          "week": 7,
+          "day": 1,
+          "exercises": [
+            {
+              "name": "Squat",
+              "sets": "3",
+              "reps": "8",
+              "intensity": "71",
+              "restSeconds": 150,
+              "liftType": "squat"
+            },
+            {
+              "name": "Bench Press",
+              "sets": "3",
+              "reps": "8",
+              "intensity": "71",
+              "restSeconds": 150,
+              "liftType": "bench"
+            },
+            {
+              "name": "Barbell Row",
+              "sets": "3",
+              "reps": "8",
+              "intensity": "71",
+              "restSeconds": 90,
+              "liftType": "row"
+            },
+            {
+              "name": "Incline DB Press",
+              "sets": "3",
+              "reps": "10",
+              "intensity": "66",
+              "restSeconds": 90,
+              "liftType": "inclineBench"
+            },
+            {
+              "name": "EZ-Bar Curls",
+              "sets": "3",
+              "reps": "10",
+              "intensity": "71",
+              "restSeconds": 60,
+              "liftType": "curl"
+            }
+          ]
+        },
+        {
+          "week": 7,
+          "day": 2,
+          "exercises": [
+            {
+              "name": "Deadlift",
+              "sets": "3",
+              "reps": "6",
+              "intensity": "76",
+              "restSeconds": 180,
+              "liftType": "deadlift"
+            },
+            {
+              "name": "Overhead Press",
+              "sets": "3",
+              "reps": "8",
+              "intensity": "71",
+              "restSeconds": 120,
+              "liftType": "ohp"
+            },
+            {
+              "name": "Lat Pulldown",
+              "sets": "3",
+              "reps": "8",
+              "intensity": "76",
+              "restSeconds": 90,
+              "liftType": "latPulldown"
+            },
+            {
+              "name": "Romanian Deadlift",
+              "sets": "3",
+              "reps": "8",
+              "intensity": "66",
+              "restSeconds": 120,
+              "liftType": "rdl"
+            },
+            {
+              "name": "Triceps Pushdown",
+              "sets": "3",
+              "reps": "10",
+              "intensity": "71",
+              "restSeconds": 60,
+              "liftType": "triceps"
+            }
+          ]
+        },
+        {
+          "week": 7,
+          "day": 3,
+          "exercises": [
+            {
+              "name": "Bench Press",
+              "sets": "3",
+              "reps": "8",
+              "intensity": "68",
+              "restSeconds": 150,
+              "liftType": "bench"
+            },
+            {
+              "name": "Squat",
+              "sets": "3",
+              "reps": "8",
+              "intensity": "68",
+              "restSeconds": 150,
+              "liftType": "squat"
+            },
+            {
+              "name": "DB Row",
+              "sets": "3",
+              "reps": "10",
+              "intensity": "71",
+              "restSeconds": 90,
+              "liftType": "row"
+            },
+            {
+              "name": "Lateral Raises",
+              "sets": "3",
+              "reps": "12",
+              "intensity": "61",
+              "restSeconds": 60,
+              "liftType": "lateralRaise"
+            },
+            {
+              "name": "Face Pulls",
+              "sets": "3",
+              "reps": "12",
+              "intensity": "61",
               "restSeconds": 60,
               "liftType": "facePull"
             }
@@ -2560,33 +2560,33 @@
           "exercises": [
             {
               "name": "Squat",
-              "sets": "4",
+              "sets": "3",
               "reps": "8",
-              "intensity": "80",
-              "restSeconds": 180,
+              "intensity": "73",
+              "restSeconds": 150,
               "liftType": "squat"
             },
             {
               "name": "Bench Press",
-              "sets": "4",
+              "sets": "3",
               "reps": "8",
-              "intensity": "80",
-              "restSeconds": 180,
+              "intensity": "73",
+              "restSeconds": 150,
               "liftType": "bench"
             },
             {
               "name": "Barbell Row",
-              "sets": "4",
+              "sets": "3",
               "reps": "8",
-              "intensity": "80",
+              "intensity": "73",
               "restSeconds": 90,
               "liftType": "row"
             },
             {
               "name": "Incline DB Press",
               "sets": "3",
-              "reps": "8",
-              "intensity": "77",
+              "reps": "10",
+              "intensity": "68",
               "restSeconds": 90,
               "liftType": "inclineBench"
             },
@@ -2594,7 +2594,7 @@
               "name": "EZ-Bar Curls",
               "sets": "3",
               "reps": "10",
-              "intensity": "77",
+              "intensity": "73",
               "restSeconds": 60,
               "liftType": "curl"
             }
@@ -2608,23 +2608,23 @@
               "name": "Deadlift",
               "sets": "3",
               "reps": "6",
-              "intensity": "82",
+              "intensity": "78",
               "restSeconds": 180,
               "liftType": "deadlift"
             },
             {
               "name": "Overhead Press",
-              "sets": "4",
+              "sets": "3",
               "reps": "8",
-              "intensity": "77",
+              "intensity": "73",
               "restSeconds": 120,
               "liftType": "ohp"
             },
             {
               "name": "Lat Pulldown",
-              "sets": "4",
+              "sets": "3",
               "reps": "8",
-              "intensity": "82",
+              "intensity": "78",
               "restSeconds": 90,
               "liftType": "latPulldown"
             },
@@ -2632,7 +2632,7 @@
               "name": "Romanian Deadlift",
               "sets": "3",
               "reps": "8",
-              "intensity": "72",
+              "intensity": "68",
               "restSeconds": 120,
               "liftType": "rdl"
             },
@@ -2640,7 +2640,7 @@
               "name": "Triceps Pushdown",
               "sets": "3",
               "reps": "10",
-              "intensity": "77",
+              "intensity": "73",
               "restSeconds": 60,
               "liftType": "triceps"
             }
@@ -2652,9 +2652,9 @@
           "exercises": [
             {
               "name": "Bench Press",
-              "sets": "4",
+              "sets": "3",
               "reps": "8",
-              "intensity": "77",
+              "intensity": "70",
               "restSeconds": 150,
               "liftType": "bench"
             },
@@ -2662,23 +2662,23 @@
               "name": "Squat",
               "sets": "3",
               "reps": "8",
-              "intensity": "77",
+              "intensity": "70",
               "restSeconds": 150,
               "liftType": "squat"
             },
             {
               "name": "DB Row",
               "sets": "3",
-              "reps": "8",
-              "intensity": "82",
+              "reps": "10",
+              "intensity": "73",
               "restSeconds": 90,
               "liftType": "row"
             },
             {
               "name": "Lateral Raises",
-              "sets": "4",
+              "sets": "3",
               "reps": "12",
-              "intensity": "67",
+              "intensity": "63",
               "restSeconds": 60,
               "liftType": "lateralRaise"
             },
@@ -2686,7 +2686,7 @@
               "name": "Face Pulls",
               "sets": "3",
               "reps": "12",
-              "intensity": "67",
+              "intensity": "63",
               "restSeconds": 60,
               "liftType": "facePull"
             }
@@ -2698,33 +2698,33 @@
           "exercises": [
             {
               "name": "Squat",
-              "sets": "5",
+              "sets": "3",
               "reps": "6",
-              "intensity": "82",
+              "intensity": "76",
               "restSeconds": 180,
               "liftType": "squat"
             },
             {
               "name": "Bench Press",
-              "sets": "5",
+              "sets": "3",
               "reps": "6",
-              "intensity": "82",
+              "intensity": "76",
               "restSeconds": 180,
               "liftType": "bench"
             },
             {
               "name": "Barbell Row",
-              "sets": "4",
+              "sets": "3",
               "reps": "6",
-              "intensity": "82",
-              "restSeconds": 90,
+              "intensity": "76",
+              "restSeconds": 120,
               "liftType": "row"
             },
             {
               "name": "Incline DB Press",
               "sets": "3",
-              "reps": "6",
-              "intensity": "80",
+              "reps": "8",
+              "intensity": "71",
               "restSeconds": 90,
               "liftType": "inclineBench"
             },
@@ -2732,7 +2732,7 @@
               "name": "EZ-Bar Curls",
               "sets": "3",
               "reps": "8",
-              "intensity": "80",
+              "intensity": "76",
               "restSeconds": 60,
               "liftType": "curl"
             }
@@ -2746,24 +2746,300 @@
               "name": "Deadlift",
               "sets": "3",
               "reps": "4",
-              "intensity": "85",
-              "restSeconds": 180,
+              "intensity": "81",
+              "restSeconds": 240,
               "liftType": "deadlift"
             },
             {
               "name": "Overhead Press",
-              "sets": "4",
+              "sets": "3",
               "reps": "6",
-              "intensity": "80",
-              "restSeconds": 120,
+              "intensity": "76",
+              "restSeconds": 150,
               "liftType": "ohp"
             },
             {
               "name": "Lat Pulldown",
-              "sets": "4",
+              "sets": "3",
+              "reps": "6",
+              "intensity": "81",
+              "restSeconds": 120,
+              "liftType": "latPulldown"
+            },
+            {
+              "name": "Romanian Deadlift",
+              "sets": "3",
+              "reps": "6",
+              "intensity": "71",
+              "restSeconds": 150,
+              "liftType": "rdl"
+            },
+            {
+              "name": "Triceps Pushdown",
+              "sets": "3",
+              "reps": "8",
+              "intensity": "76",
+              "restSeconds": 60,
+              "liftType": "triceps"
+            }
+          ]
+        },
+        {
+          "week": 9,
+          "day": 3,
+          "exercises": [
+            {
+              "name": "Bench Press",
+              "sets": "3",
+              "reps": "6",
+              "intensity": "73",
+              "restSeconds": 180,
+              "liftType": "bench"
+            },
+            {
+              "name": "Squat",
+              "sets": "3",
+              "reps": "6",
+              "intensity": "73",
+              "restSeconds": 180,
+              "liftType": "squat"
+            },
+            {
+              "name": "DB Row",
+              "sets": "3",
+              "reps": "8",
+              "intensity": "76",
+              "restSeconds": 120,
+              "liftType": "row"
+            },
+            {
+              "name": "Lateral Raises",
+              "sets": "3",
+              "reps": "10",
+              "intensity": "66",
+              "restSeconds": 60,
+              "liftType": "lateralRaise"
+            },
+            {
+              "name": "Face Pulls",
+              "sets": "3",
+              "reps": "10",
+              "intensity": "66",
+              "restSeconds": 60,
+              "liftType": "facePull"
+            }
+          ]
+        },
+        {
+          "week": 10,
+          "day": 1,
+          "exercises": [
+            {
+              "name": "Squat",
+              "sets": "3",
+              "reps": "6",
+              "intensity": "78",
+              "restSeconds": 180,
+              "liftType": "squat"
+            },
+            {
+              "name": "Bench Press",
+              "sets": "3",
+              "reps": "6",
+              "intensity": "78",
+              "restSeconds": 180,
+              "liftType": "bench"
+            },
+            {
+              "name": "Barbell Row",
+              "sets": "3",
+              "reps": "6",
+              "intensity": "78",
+              "restSeconds": 120,
+              "liftType": "row"
+            },
+            {
+              "name": "Incline DB Press",
+              "sets": "3",
+              "reps": "8",
+              "intensity": "73",
+              "restSeconds": 90,
+              "liftType": "inclineBench"
+            },
+            {
+              "name": "EZ-Bar Curls",
+              "sets": "3",
+              "reps": "8",
+              "intensity": "78",
+              "restSeconds": 60,
+              "liftType": "curl"
+            }
+          ]
+        },
+        {
+          "week": 10,
+          "day": 2,
+          "exercises": [
+            {
+              "name": "Deadlift",
+              "sets": "3",
+              "reps": "4",
+              "intensity": "83",
+              "restSeconds": 240,
+              "liftType": "deadlift"
+            },
+            {
+              "name": "Overhead Press",
+              "sets": "3",
+              "reps": "6",
+              "intensity": "78",
+              "restSeconds": 150,
+              "liftType": "ohp"
+            },
+            {
+              "name": "Lat Pulldown",
+              "sets": "3",
+              "reps": "6",
+              "intensity": "83",
+              "restSeconds": 120,
+              "liftType": "latPulldown"
+            },
+            {
+              "name": "Romanian Deadlift",
+              "sets": "3",
+              "reps": "6",
+              "intensity": "73",
+              "restSeconds": 150,
+              "liftType": "rdl"
+            },
+            {
+              "name": "Triceps Pushdown",
+              "sets": "3",
+              "reps": "8",
+              "intensity": "78",
+              "restSeconds": 60,
+              "liftType": "triceps"
+            }
+          ]
+        },
+        {
+          "week": 10,
+          "day": 3,
+          "exercises": [
+            {
+              "name": "Bench Press",
+              "sets": "3",
+              "reps": "6",
+              "intensity": "75",
+              "restSeconds": 180,
+              "liftType": "bench"
+            },
+            {
+              "name": "Squat",
+              "sets": "3",
+              "reps": "6",
+              "intensity": "75",
+              "restSeconds": 180,
+              "liftType": "squat"
+            },
+            {
+              "name": "DB Row",
+              "sets": "3",
+              "reps": "8",
+              "intensity": "78",
+              "restSeconds": 120,
+              "liftType": "row"
+            },
+            {
+              "name": "Lateral Raises",
+              "sets": "3",
+              "reps": "10",
+              "intensity": "68",
+              "restSeconds": 60,
+              "liftType": "lateralRaise"
+            },
+            {
+              "name": "Face Pulls",
+              "sets": "3",
+              "reps": "10",
+              "intensity": "68",
+              "restSeconds": 60,
+              "liftType": "facePull"
+            }
+          ]
+        },
+        {
+          "week": 11,
+          "day": 1,
+          "exercises": [
+            {
+              "name": "Squat",
+              "sets": "3",
+              "reps": "6",
+              "intensity": "80",
+              "restSeconds": 180,
+              "liftType": "squat"
+            },
+            {
+              "name": "Bench Press",
+              "sets": "3",
+              "reps": "6",
+              "intensity": "80",
+              "restSeconds": 180,
+              "liftType": "bench"
+            },
+            {
+              "name": "Barbell Row",
+              "sets": "3",
+              "reps": "6",
+              "intensity": "80",
+              "restSeconds": 120,
+              "liftType": "row"
+            },
+            {
+              "name": "Incline DB Press",
+              "sets": "3",
+              "reps": "8",
+              "intensity": "75",
+              "restSeconds": 90,
+              "liftType": "inclineBench"
+            },
+            {
+              "name": "EZ-Bar Curls",
+              "sets": "3",
+              "reps": "8",
+              "intensity": "80",
+              "restSeconds": 60,
+              "liftType": "curl"
+            }
+          ]
+        },
+        {
+          "week": 11,
+          "day": 2,
+          "exercises": [
+            {
+              "name": "Deadlift",
+              "sets": "2",
+              "reps": "4",
+              "intensity": "85",
+              "restSeconds": 240,
+              "liftType": "deadlift"
+            },
+            {
+              "name": "Overhead Press",
+              "sets": "3",
+              "reps": "6",
+              "intensity": "80",
+              "restSeconds": 150,
+              "liftType": "ohp"
+            },
+            {
+              "name": "Lat Pulldown",
+              "sets": "3",
               "reps": "6",
               "intensity": "85",
-              "restSeconds": 90,
+              "restSeconds": 120,
               "liftType": "latPulldown"
             },
             {
@@ -2771,7 +3047,7 @@
               "sets": "3",
               "reps": "6",
               "intensity": "75",
-              "restSeconds": 120,
+              "restSeconds": 150,
               "liftType": "rdl"
             },
             {
@@ -2785,36 +3061,36 @@
           ]
         },
         {
-          "week": 9,
+          "week": 11,
           "day": 3,
           "exercises": [
             {
               "name": "Bench Press",
-              "sets": "4",
+              "sets": "3",
               "reps": "6",
-              "intensity": "80",
-              "restSeconds": 150,
+              "intensity": "77",
+              "restSeconds": 180,
               "liftType": "bench"
             },
             {
               "name": "Squat",
               "sets": "3",
               "reps": "6",
-              "intensity": "80",
-              "restSeconds": 150,
+              "intensity": "77",
+              "restSeconds": 180,
               "liftType": "squat"
             },
             {
               "name": "DB Row",
               "sets": "3",
-              "reps": "6",
-              "intensity": "85",
-              "restSeconds": 90,
+              "reps": "8",
+              "intensity": "80",
+              "restSeconds": 120,
               "liftType": "row"
             },
             {
               "name": "Lateral Raises",
-              "sets": "4",
+              "sets": "3",
               "reps": "10",
               "intensity": "70",
               "restSeconds": 60,
@@ -2825,282 +3101,6 @@
               "sets": "3",
               "reps": "10",
               "intensity": "70",
-              "restSeconds": 60,
-              "liftType": "facePull"
-            }
-          ]
-        },
-        {
-          "week": 10,
-          "day": 1,
-          "exercises": [
-            {
-              "name": "Squat",
-              "sets": "5",
-              "reps": "6",
-              "intensity": "85",
-              "restSeconds": 180,
-              "liftType": "squat"
-            },
-            {
-              "name": "Bench Press",
-              "sets": "5",
-              "reps": "6",
-              "intensity": "85",
-              "restSeconds": 180,
-              "liftType": "bench"
-            },
-            {
-              "name": "Barbell Row",
-              "sets": "4",
-              "reps": "6",
-              "intensity": "85",
-              "restSeconds": 90,
-              "liftType": "row"
-            },
-            {
-              "name": "Incline DB Press",
-              "sets": "3",
-              "reps": "6",
-              "intensity": "82",
-              "restSeconds": 90,
-              "liftType": "inclineBench"
-            },
-            {
-              "name": "EZ-Bar Curls",
-              "sets": "3",
-              "reps": "8",
-              "intensity": "82",
-              "restSeconds": 60,
-              "liftType": "curl"
-            }
-          ]
-        },
-        {
-          "week": 10,
-          "day": 2,
-          "exercises": [
-            {
-              "name": "Deadlift",
-              "sets": "3",
-              "reps": "4",
-              "intensity": "87",
-              "restSeconds": 180,
-              "liftType": "deadlift"
-            },
-            {
-              "name": "Overhead Press",
-              "sets": "4",
-              "reps": "6",
-              "intensity": "82",
-              "restSeconds": 120,
-              "liftType": "ohp"
-            },
-            {
-              "name": "Lat Pulldown",
-              "sets": "4",
-              "reps": "6",
-              "intensity": "87",
-              "restSeconds": 90,
-              "liftType": "latPulldown"
-            },
-            {
-              "name": "Romanian Deadlift",
-              "sets": "3",
-              "reps": "6",
-              "intensity": "77",
-              "restSeconds": 120,
-              "liftType": "rdl"
-            },
-            {
-              "name": "Triceps Pushdown",
-              "sets": "3",
-              "reps": "8",
-              "intensity": "82",
-              "restSeconds": 60,
-              "liftType": "triceps"
-            }
-          ]
-        },
-        {
-          "week": 10,
-          "day": 3,
-          "exercises": [
-            {
-              "name": "Bench Press",
-              "sets": "4",
-              "reps": "6",
-              "intensity": "82",
-              "restSeconds": 150,
-              "liftType": "bench"
-            },
-            {
-              "name": "Squat",
-              "sets": "3",
-              "reps": "6",
-              "intensity": "82",
-              "restSeconds": 150,
-              "liftType": "squat"
-            },
-            {
-              "name": "DB Row",
-              "sets": "3",
-              "reps": "6",
-              "intensity": "87",
-              "restSeconds": 90,
-              "liftType": "row"
-            },
-            {
-              "name": "Lateral Raises",
-              "sets": "4",
-              "reps": "10",
-              "intensity": "72",
-              "restSeconds": 60,
-              "liftType": "lateralRaise"
-            },
-            {
-              "name": "Face Pulls",
-              "sets": "3",
-              "reps": "10",
-              "intensity": "72",
-              "restSeconds": 60,
-              "liftType": "facePull"
-            }
-          ]
-        },
-        {
-          "week": 11,
-          "day": 1,
-          "exercises": [
-            {
-              "name": "Squat",
-              "sets": "5",
-              "reps": "6",
-              "intensity": "87",
-              "restSeconds": 180,
-              "liftType": "squat"
-            },
-            {
-              "name": "Bench Press",
-              "sets": "5",
-              "reps": "6",
-              "intensity": "87",
-              "restSeconds": 180,
-              "liftType": "bench"
-            },
-            {
-              "name": "Barbell Row",
-              "sets": "4",
-              "reps": "6",
-              "intensity": "87",
-              "restSeconds": 90,
-              "liftType": "row"
-            },
-            {
-              "name": "Incline DB Press",
-              "sets": "3",
-              "reps": "6",
-              "intensity": "85",
-              "restSeconds": 90,
-              "liftType": "inclineBench"
-            },
-            {
-              "name": "EZ-Bar Curls",
-              "sets": "3",
-              "reps": "8",
-              "intensity": "85",
-              "restSeconds": 60,
-              "liftType": "curl"
-            }
-          ]
-        },
-        {
-          "week": 11,
-          "day": 2,
-          "exercises": [
-            {
-              "name": "Deadlift",
-              "sets": "3",
-              "reps": "4",
-              "intensity": "90",
-              "restSeconds": 180,
-              "liftType": "deadlift"
-            },
-            {
-              "name": "Overhead Press",
-              "sets": "4",
-              "reps": "6",
-              "intensity": "85",
-              "restSeconds": 120,
-              "liftType": "ohp"
-            },
-            {
-              "name": "Lat Pulldown",
-              "sets": "4",
-              "reps": "6",
-              "intensity": "90",
-              "restSeconds": 90,
-              "liftType": "latPulldown"
-            },
-            {
-              "name": "Romanian Deadlift",
-              "sets": "3",
-              "reps": "6",
-              "intensity": "80",
-              "restSeconds": 120,
-              "liftType": "rdl"
-            },
-            {
-              "name": "Triceps Pushdown",
-              "sets": "3",
-              "reps": "8",
-              "intensity": "85",
-              "restSeconds": 60,
-              "liftType": "triceps"
-            }
-          ]
-        },
-        {
-          "week": 11,
-          "day": 3,
-          "exercises": [
-            {
-              "name": "Bench Press",
-              "sets": "4",
-              "reps": "6",
-              "intensity": "85",
-              "restSeconds": 150,
-              "liftType": "bench"
-            },
-            {
-              "name": "Squat",
-              "sets": "3",
-              "reps": "6",
-              "intensity": "85",
-              "restSeconds": 150,
-              "liftType": "squat"
-            },
-            {
-              "name": "DB Row",
-              "sets": "3",
-              "reps": "6",
-              "intensity": "90",
-              "restSeconds": 90,
-              "liftType": "row"
-            },
-            {
-              "name": "Lateral Raises",
-              "sets": "4",
-              "reps": "10",
-              "intensity": "75",
-              "restSeconds": 60,
-              "liftType": "lateralRaise"
-            },
-            {
-              "name": "Face Pulls",
-              "sets": "3",
-              "reps": "10",
-              "intensity": "75",
               "restSeconds": 60,
               "liftType": "facePull"
             }
@@ -3115,7 +3115,7 @@
               "sets": "2",
               "reps": "8",
               "intensity": "60",
-              "restSeconds": 180,
+              "restSeconds": 120,
               "liftType": "squat"
             },
             {
@@ -3123,7 +3123,7 @@
               "sets": "2",
               "reps": "8",
               "intensity": "60",
-              "restSeconds": 180,
+              "restSeconds": 120,
               "liftType": "bench"
             },
             {
@@ -3145,7 +3145,7 @@
               "sets": "2",
               "reps": "6",
               "intensity": "60",
-              "restSeconds": 180,
+              "restSeconds": 120,
               "liftType": "deadlift"
             },
             {
@@ -3153,7 +3153,7 @@
               "sets": "2",
               "reps": "8",
               "intensity": "60",
-              "restSeconds": 120,
+              "restSeconds": 90,
               "liftType": "ohp"
             },
             {
@@ -3175,7 +3175,7 @@
               "sets": "2",
               "reps": "8",
               "intensity": "60",
-              "restSeconds": 150,
+              "restSeconds": 120,
               "liftType": "bench"
             },
             {
@@ -3183,7 +3183,7 @@
               "sets": "2",
               "reps": "8",
               "intensity": "60",
-              "restSeconds": 150,
+              "restSeconds": 120,
               "liftType": "squat"
             },
             {
